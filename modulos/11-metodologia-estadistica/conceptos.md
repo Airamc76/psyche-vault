@@ -172,3 +172,49 @@ edad, nivel educativo) relevantes para la investigación.
 
 El tamaño de muestra no garantiza representatividad. Una encuesta de un millón de personas
 mal muestreadas es peor que una de mil personas bien muestreadas.
+
+---
+
+## 12. Investigación cualitativa
+
+La investigación cualitativa estudia significados, experiencias, procesos y contextos que los métodos cuantitativos no capturan bien. No es "investigación sin números" — es investigación con un paradigma epistemológico diferente.
+
+**Paradigma interpretativo:** en vez de buscar leyes universales (paradigma positivista), busca comprensión en profundidad de fenómenos particulares. La pregunta no es "¿cuánto?" sino "¿cómo?" y "¿por qué?".
+
+**Métodos principales:**
+- *Entrevista en profundidad:* semiestructurada o abierta, busca el significado subjetivo. La guía de preguntas es flexible. El análisis busca temas, no frecuencias.
+- *Grupos focales:* la interacción grupal genera datos que la entrevista individual no produce.
+- *Observación participante:* el investigador se integra al contexto que estudia. Útil en psicología comunitaria y etnografía.
+- *Análisis de documentos:* historias clínicas, redes sociales, diarios personales.
+
+**Análisis de datos cualitativos:**
+- *Análisis temático (Braun & Clarke, 2006):* identificar, analizar e interpretar temas en los datos. Es el método más flexible y ampliamente usado.
+- *Grounded Theory (Glaser & Strauss):* construir teoría desde los datos inductivamente, sin hipótesis previas. Útil para fenómenos no bien comprendidos.
+- *Análisis fenomenológico interpretativo (IPA):* explorar cómo las personas dan sentido a sus experiencias vividas. Muy usado en psicología clínica y de la salud.
+- *Análisis del discurso:* cómo el lenguaje construye realidades sociales.
+
+**Criterios de rigor en investigación cualitativa** (en vez de validez y confiabilidad):
+- *Credibilidad:* los participantes reconocen sus propias experiencias en los hallazgos
+- *Transferibilidad:* descripción densa del contexto que permite al lector juzgar si aplica a otros casos
+- *Confirmabilidad:* los hallazgos reflejan los datos, no los sesgos del investigador (auditoría, reflexividad)
+- *Saturación:* seguir recolectando datos hasta que no emergen nuevos temas
+
+**El debate cuantitativo-cualitativo:** no son paradigmas rivales sino complementarios. La pregunta de investigación determina el método, no al revés. Los diseños mixtos integran ambos.
+
+---
+
+## 13. Estadística avanzada (multivariada)
+
+La estadística básica del módulo 11 permite leer estudios simples. Para leer investigación psicológica moderna sobre personalidad, psicometría, clínica y neurociencia se necesitan estos conceptos:
+
+**Regresión múltiple:** predice una variable dependiente continua a partir de múltiples predictores simultáneamente. Ejemplo: predecir bienestar a partir de extraversión, apoyo social y nivel educativo controlando entre sí. El coeficiente beta estandarizado dice cuánto cambia la VD por cada desviación estándar de cambio en el predictor, manteniendo el resto constante.
+
+**Regresión logística:** como la regresión múltiple pero cuando la VD es categórica binaria (tiene/no tiene el trastorno). Produce odds ratios: cuántas veces más probable es el evento dada una unidad de cambio en el predictor.
+
+**Análisis factorial exploratorio (AFE):** identifica la estructura de covarianza entre muchas variables y reduce a un número menor de factores latentes. Así se construyó el Big Five: partiendo de correlaciones entre cientos de adjetivos de personalidad, el análisis factorial reveló 5 dimensiones subyacentes. El factor es una variable no observada que explica la correlación entre variables observadas.
+
+**Análisis factorial confirmatorio (AFC):** prueba si una estructura factorial hipotética (diseñada a priori) se ajusta a los datos. Es el método estándar para validar tests psicológicos.
+
+**Modelado de ecuaciones estructurales (SEM):** combina AFC con regresión. Permite modelar relaciones entre variables latentes (no medidas directamente) y sus indicadores observados, y entre variables latentes entre sí. Ejemplo: si la inteligencia emocional (latente) media la relación entre apego seguro (latente) y bienestar (latente).
+
+**Meta-análisis:** síntesis cuantitativa de múltiples estudios sobre la misma pregunta. Calcula un tamaño de efecto combinado ponderado por el tamaño de muestra de cada estudio. La heterogeneidad (I²) indica cuánto varían los resultados entre estudios. Los meta-análisis son la cima de la jerarquía de evidencia pero no son mágicos: basura adentro, basura afuera.

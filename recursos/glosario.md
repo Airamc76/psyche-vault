@@ -109,3 +109,225 @@ Fenómeno por el que una persona desplaza hacia el terapeuta (o hacia otras figu
 
 ## Yo (self)
 En el sentido más cotidiano, el yo es la experiencia de ser el sujeto de los propios pensamientos y acciones: el "yo" que piensa, que siente, que decide. En psicología, se estudia desde múltiples ángulos: como estructura cognitiva (el conjunto de representaciones sobre uno mismo), como agente causal (la sensación de control sobre la propia conducta) y como objeto de reflexión (la capacidad de verse a uno mismo desde fuera). Su coherencia es uno de los indicadores centrales de salud mental.
+
+---
+
+# Metodología y estadística
+
+## Aleatorización
+Procedimiento por el que los participantes de un estudio se asignan a los grupos de forma aleatoria, sin que ningún factor sistemático determine quién va a cada condición. Su objetivo es que los grupos sean equivalentes en todas las variables relevantes antes de la intervención, lo que permite atribuir las diferencias observadas al tratamiento. Es el elemento central del experimento aleatorio controlado y el estándar metodológico en investigación clínica.
+
+## ANOVA
+Análisis de varianza; técnica estadística que compara las medias de tres o más grupos para determinar si las diferencias entre ellos son mayores de las que cabría esperar por azar. Descompone la variabilidad total de los datos en variabilidad atribuible al factor estudiado y variabilidad residual. Cuando el ANOVA es significativo indica que al menos un par de grupos difiere, pero no dice cuáles; para eso se usan pruebas post hoc.
+
+## Chi-cuadrado
+Prueba estadística que evalúa si existe asociación entre dos variables categóricas. Compara las frecuencias observadas en una tabla de contingencia con las frecuencias que se esperarían si las variables fueran independientes. Si la diferencia entre lo observado y lo esperado es suficientemente grande, se concluye que las variables están relacionadas.
+
+## Correlación de Pearson
+Medida que cuantifica la fuerza y dirección de la relación lineal entre dos variables continuas. Toma valores entre -1 y +1: valores cercanos a +1 indican relación positiva fuerte, cercanos a -1 indican relación negativa fuerte, y cercanos a 0 indican ausencia de relación lineal. Es fundamental entender que correlación no implica causalidad: dos variables pueden correlacionar por la influencia de una tercera variable que actúa sobre ambas.
+
+## Diseño experimental
+Estructura metodológica de un estudio que incluye la manipulación de al menos una variable independiente, la asignación aleatoria de participantes y el control de variables extrañas. Permite establecer relaciones causales porque el investigador controla activamente qué ocurre. Se distingue de los diseños observacionales, donde el investigador solo registra lo que sucede de forma natural sin intervenir.
+
+## Error tipo I y tipo II
+En el contraste de hipótesis, el error tipo I es rechazar la hipótesis nula cuando en realidad es verdadera (falso positivo); el tipo II es no rechazarla cuando es falsa (falso negativo). El umbral de error tipo I se controla con el nivel de significación, generalmente fijado en α = 0.05. Reducir uno de los dos errores tiende a aumentar el otro, por lo que el diseño debe equilibrarlos según el coste relativo de cada equivocación.
+
+## Estudio longitudinal vs transversal
+Un estudio longitudinal sigue a los mismos participantes a lo largo del tiempo para observar cambios dentro de los individuos. Un estudio transversal mide a diferentes grupos de personas en un único momento para comparar cohortes o edades. El longitudinal es más costoso y lento pero permite separar efectos del desarrollo real de efectos de cohorte; el transversal es eficiente pero puede confundir cambios evolutivos con diferencias generacionales.
+
+## Hipótesis nula
+Afirmación de partida que sostiene que no existe efecto, diferencia o relación en la población que se estudia. El contraste estadístico evalúa si los datos son suficientemente incompatibles con esa afirmación como para rechazarla. Rechazar la hipótesis nula no prueba directamente la hipótesis alternativa, solo indica que los datos son inconsistentes con la ausencia de efecto; la confusión entre ambas cosas es una de las fuentes más frecuentes de error interpretativo en ciencia.
+
+## Metaanálisis
+Técnica estadística que combina los resultados de múltiples estudios independientes sobre la misma pregunta para obtener una estimación más precisa del efecto. Al integrar más datos que cualquier estudio individual, aumenta la potencia y permite detectar efectos pequeños. Su calidad depende de la calidad de los estudios incluidos y del sesgo de publicación, que tiende a excluir estudios con resultados nulos.
+
+## Poder estadístico
+Probabilidad de detectar un efecto real cuando existe. Depende del tamaño de la muestra, del tamaño del efecto esperado y del nivel de significación elegido. Un estudio con bajo poder estadístico puede concluir erróneamente que no hay efecto cuando sí lo hay (error tipo II); por eso los estudios pequeños son propensos a producir tanto falsos negativos como estimaciones de efecto inestables.
+
+## Preregistro
+Práctica de documentar públicamente las hipótesis, el diseño del estudio y el plan de análisis antes de recoger los datos, en un repositorio independiente. Distingue los análisis confirmatorios —predefinidos— de los exploratorios —post hoc—, lo que reduce el sesgo de confirmación y las prácticas cuestionables como el p-hacking. Es una respuesta directa a la crisis de replicabilidad en ciencias del comportamiento.
+
+## Tamaño de efecto
+Medida que cuantifica la magnitud de una diferencia o relación, independientemente del tamaño de la muestra. El d de Cohen y el r de Pearson son las más comunes. El tamaño de efecto es lo que importa en la práctica: un resultado estadísticamente significativo con tamaño de efecto ínfimo puede no tener ninguna relevancia clínica o aplicada. Se usa también en metaanálisis para comparar resultados entre estudios.
+
+## Validez interna y externa
+La validez interna es el grado en que los cambios observados en la variable dependiente pueden atribuirse causalmente a la variable independiente, sin que intervengan factores de confusión. La validez externa es el grado en que los resultados pueden generalizarse a otras personas, contextos o momentos. Ambas suelen estar en tensión: los diseños con máximo control tienen alta validez interna pero frecuentemente se realizan en condiciones artificiales que limitan la generalización.
+
+## Variable independiente y dependiente
+La variable independiente es la que el investigador manipula o selecciona para estudiar su efecto; la dependiente es la que se mide como resultado. En un experimento sobre el efecto del sueño en la memoria, las horas de sueño son la variable independiente y el rendimiento en la prueba de memoria es la dependiente. Esta distinción es fundamental para entender la dirección causal que plantea cualquier diseño experimental.
+
+---
+
+# Neurociencia y psicobiología
+
+## Amígdala
+Estructura cerebral del sistema límbico con forma de almendra, situada en el lóbulo temporal, que desempeña un papel central en el procesamiento emocional y la detección de amenazas. Activa respuestas de miedo y ansiedad de forma rápida y automática, antes de que la corteza prefrontal pueda evaluar la situación conscientemente. Las lesiones en la amígdala reducen la respuesta de miedo y la capacidad de reconocer expresiones faciales que indican peligro.
+
+## BDNF (factor neurotrófico derivado del cerebro)
+Proteína que promueve la supervivencia, el crecimiento y la diferenciación de las neuronas, especialmente en el hipocampo y la corteza prefrontal. Los niveles bajos de BDNF se asocian con depresión, y muchos antidepresivos parecen actuar en parte aumentando su expresión. El ejercicio físico aeróbico es uno de los estimuladores más potentes de BDNF que se conocen.
+
+## Cortisol
+Hormona glucocorticoide liberada por las glándulas suprarrenales en respuesta al estrés. Moviliza energía en forma de glucosa para hacer frente a amenazas, suprime temporalmente el sistema inmune y altera funciones cognitivas como la memoria. La exposición crónica a niveles elevados de cortisol daña el hipocampo, altera la regulación emocional y contribuye a trastornos como la depresión y el síndrome de estrés postraumático.
+
+## Eje HPA
+Sistema neuroendocrino formado por el hipotálamo, la hipófisis y las glándulas suprarrenales, que regula la respuesta del organismo al estrés. Cuando el cerebro detecta una amenaza, el hipotálamo libera CRH, que estimula la hipófisis a secretar ACTH, que a su vez activa las suprarrenales para liberar cortisol. Un sistema de retroalimentación negativa detiene la respuesta cuando el estrés cesa; cuando este mecanismo falla, el cortisol se mantiene elevado de forma crónica.
+
+## Epigenética
+Estudio de los cambios en la expresión génica que no alteran la secuencia de ADN pero sí afectan qué genes se leen y cuándo. Mecanismos como la metilación del ADN y la modificación de histonas pueden ser influidos por el entorno, la experiencia y el estrés. Algunos de estos cambios pueden transmitirse a las siguientes generaciones, lo que tiene implicaciones para comprender cómo el trauma o las condiciones ambientales dejan huella biológica duradera.
+
+## Heredabilidad
+Estadístico que estima qué proporción de la variación de un rasgo en una población concreta se debe a diferencias genéticas entre individuos. Una heredabilidad del 0.5 no significa que el 50% de un rasgo sea genético en sentido absoluto; significa que el 50% de las diferencias entre personas en ese rasgo se explica por diferencias en sus genes. Es un estimador poblacional y contextual, no una propiedad fija del rasgo ni del individuo.
+
+## Hipocampo
+Estructura del lóbulo temporal medial fundamental para la formación de nuevos recuerdos declarativos y para la navegación espacial. Es una de las pocas regiones del cerebro adulto donde se produce neurogénesis, es decir, formación de nuevas neuronas. El hipocampo es especialmente vulnerable al estrés crónico y al cortisol elevado, lo que explica los déficits de memoria observados en la depresión y el trastorno de estrés postraumático.
+
+## Neuroplasticidad sináptica
+Capacidad de las sinapsis para modificar su fuerza y eficiencia en función de la actividad. Cuando una sinapsis se activa repetidamente, puede potenciarse (LTP) o debilitarse (LTD), lo que constituye la base celular del aprendizaje y la memoria. Esta plasticidad opera a múltiples escalas temporales: desde cambios que ocurren en segundos hasta reorganizaciones estructurales que tardan días o semanas en consolidarse.
+
+## Neurotransmisor
+Molécula química liberada por una neurona en la sinapsis que transmite la señal a la neurona siguiente o a una célula efectora. Los principales neurotransmisores relevantes para la conducta y la salud mental incluyen dopamina, serotonina, noradrenalina, GABA y glutamato. Su desequilibrio o el fallo en su recaptación está implicado en numerosos trastornos psiquiátricos y es el blanco de la mayoría de los fármacos psiquiátricos actuales.
+
+## Potenciación a largo plazo (LTP)
+Proceso por el que la activación repetida de una sinapsis produce un aumento persistente en su eficacia. Se considera el mecanismo celular principal del aprendizaje y la memoria en el cerebro. La LTP depende de receptores NMDA y fue descrita por primera vez por Bliss y Lomo en 1973; su estudio ha sido central en neurociencia cognitiva y en el desarrollo de modelos computacionales de la memoria.
+
+## Sistema nervioso autónomo
+División del sistema nervioso periférico que regula las funciones corporales involuntarias: frecuencia cardíaca, presión arterial, digestión, respiración y respuesta al estrés. Se divide en rama simpática, que activa la respuesta de lucha o huida, y parasimpática, que promueve el descanso y la recuperación. El equilibrio entre ambas ramas es un indicador de regulación fisiológica y puede evaluarse con medidas como la variabilidad de la frecuencia cardíaca.
+
+## Sistema límbico
+Conjunto de estructuras cerebrales —entre ellas la amígdala, el hipocampo, el hipotálamo y la corteza cingulada— implicadas en el procesamiento emocional, la memoria y la motivación. Es evolutivamente antiguo y compartido con otros mamíferos. Aunque el concepto de "sistema límbico" como unidad funcional discreta ha sido cuestionado, sigue siendo útil como marco general para entender las regiones que median entre la cognición y las emociones.
+
+---
+
+# Procesos cognitivos
+
+## Atención selectiva
+Capacidad de focalizar los recursos cognitivos en estímulos o tareas relevantes mientras se ignoran los irrelevantes. Es un proceso limitado: no se puede atender a todo simultáneamente, por lo que el sistema cognitivo filtra y prioriza constantemente. La atención selectiva puede ser dirigida de forma voluntaria (top-down) o capturada de forma automática por estímulos salientes (bottom-up), como un ruido inesperado o un movimiento brusco.
+
+## Codificación (memoria)
+Proceso por el que la información percibida se transforma en una representación que puede almacenarse en la memoria. La profundidad de procesamiento influye en la calidad de la codificación: procesar el significado de algo produce un recuerdo más duradero que procesar solo su apariencia superficial. La codificación puede verse facilitada o perjudicada por factores como la atención prestada, el estado emocional y la elaboración activa del material.
+
+## Ceguera por inatención
+Fenómeno por el que un observador no detecta un objeto o evento perfectamente visible cuando su atención está focalizada en otra tarea. El experimento más conocido es el del gorila invisible de Simons y Chabris: personas concentradas en contar pases de baloncesto no perciben a un sujeto disfrazado de gorila que cruza la escena. Demuestra que la conciencia visual depende más de lo que se atiende que de lo que entra por los ojos.
+
+## Función ejecutiva
+Conjunto de procesos cognitivos de orden superior que permiten planificar, inhibir respuestas automáticas, mantener información en mente y flexibilizar el comportamiento según el contexto. Incluye la memoria de trabajo, la inhibición, la flexibilidad cognitiva y la planificación. Dependen principalmente de la corteza prefrontal y son especialmente vulnerables al estrés, la fatiga y a condiciones como el TDAH.
+
+## Heurístico
+Atajo mental que permite llegar a decisiones o juicios de forma rápida y eficiente, sin procesar toda la información disponible. Los heurísticos son adaptativos en la mayoría de los contextos pero producen errores sistemáticos cuando se aplican fuera de sus condiciones de validez. Kahneman y Tversky describieron los más influyentes: representatividad, disponibilidad y ajuste y anclaje.
+
+## Memoria de trabajo
+Sistema cognitivo que mantiene activa una cantidad limitada de información durante un breve periodo mientras se realiza otra tarea. No es un simple almacén temporal: implica manipulación activa del contenido, no solo retención pasiva. El modelo de Baddeley la descompone en un ejecutivo central, el bucle fonológico, la agenda visoespacial y el buffer episódico; su capacidad es un potente predictor del rendimiento intelectual general.
+
+## Memoria episódica
+Sistema de memoria que almacena eventos personales ubicados en un contexto temporal y espacial específico: recuerdos de qué ocurrió, dónde y cuándo. Es la memoria autobiográfica en su sentido más concreto y está especialmente vinculada al hipocampo. Se distingue de la memoria semántica en que los recuerdos episódicos tienen el sello de la experiencia vivida subjetivamente, lo que Tulving llamó "viaje mental en el tiempo".
+
+## Memoria semántica
+Sistema de memoria que almacena conocimiento general sobre el mundo: hechos, conceptos, significados y relaciones entre ellos, independientemente del contexto en que fueron aprendidos. Se sabe que París es la capital de Francia sin recordar cuándo ni cómo se aprendió ese dato. La memoria semántica es relativamente resistente al daño del hipocampo en comparación con la episódica.
+
+## Metacognición
+Capacidad de pensar sobre los propios procesos mentales: saber qué se sabe, planificar cómo abordar un problema, monitorizar si la estrategia está funcionando y ajustar el curso de acción. Es una habilidad de orden superior que distingue a los aprendices expertos de los novatos. En psicoterapia es central en enfoques como la terapia metacognitiva de Wells, que aborda no solo los pensamientos negativos sino la relación que la persona mantiene con sus propios pensamientos.
+
+## Priming
+Efecto por el que la exposición a un estímulo facilita o modifica el procesamiento de un estímulo posterior, sin que el sujeto sea necesariamente consciente de ello. Ver la palabra "médico" hace que "enfermera" se reconozca más rápido que "mesa". El priming puede ser semántico, perceptivo o procedimental, y opera incluso con estímulos presentados por debajo del umbral de conciencia.
+
+## Razonamiento deductivo e inductivo
+El razonamiento deductivo parte de premisas generales para extraer conclusiones necesariamente verdaderas si las premisas lo son. El inductivo parte de observaciones particulares para inferir principios generales, con conclusiones que son probables pero no garantizadas. La ciencia combina ambos: la inducción genera hipótesis a partir de datos; la deducción genera predicciones comprobables a partir de teorías.
+
+## Recuperación (retrieval)
+Proceso por el que la información almacenada en la memoria se vuelve accesible y se trae a la conciencia. No es una simple lectura pasiva: la recuperación es reconstructiva y puede modificar el recuerdo original en el proceso. La práctica de recuperación activa —intentar recordar sin consultar el material— es una de las estrategias de aprendizaje más efectivas conocidas, mucho más eficiente que la relectura repetida.
+
+---
+
+# Psicopatología y clínica
+
+## Alianza terapéutica
+Calidad de la relación de colaboración entre terapeuta y paciente, que incluye el acuerdo sobre los objetivos del tratamiento, el acuerdo sobre las tareas y el vínculo emocional entre ambos. Es uno de los predictores más robustos del resultado terapéutico, más potente que la orientación teórica del terapeuta. Una alianza sólida no es solo un prerrequisito para el trabajo terapéutico sino un mecanismo de cambio en sí misma.
+
+## Comorbilidad
+Presencia simultánea de dos o más trastornos en el mismo individuo. En psicopatología, la comorbilidad es la regla más que la excepción: la depresión y la ansiedad coexisten con frecuencia, los trastornos por uso de sustancias se superponen con otros diagnósticos. La comorbilidad complica el diagnóstico, el tratamiento y la interpretación de los estudios de eficacia terapéutica.
+
+## Criterios diagnósticos
+Conjunto de síntomas, duración, intensidad y exclusiones que deben cumplirse para asignar un diagnóstico. Los sistemas actuales —DSM-5, CIE-11— definen los trastornos mediante criterios operacionalizados que buscan mejorar la fiabilidad entre clínicos. Los criterios diagnósticos son convenciones clínicas útiles, no fronteras naturales en la biología; su definición es objeto de revisión y debate continuo.
+
+## Diátesis-estrés
+Modelo que explica el desarrollo de trastornos mentales como el resultado de la interacción entre una vulnerabilidad preexistente (diátesis) y un factor desencadenante ambiental (estrés). La diátesis puede ser genética, neurobiológica o psicológica. El modelo predice que personas con alta vulnerabilidad desarrollarán trastornos ante estresores leves, mientras que personas con baja vulnerabilidad solo lo harán ante estresores muy severos.
+
+## DSM-5
+Manual Diagnóstico y Estadístico de los Trastornos Mentales, quinta edición, publicado por la Asociación Americana de Psiquiatría en 2013. Es el sistema de clasificación diagnóstica más utilizado en la práctica clínica e investigación en el mundo anglosajón. Ha sido criticado por su escasa base etiológica, su alto grado de comorbilidad entre categorías y su tendencia a medicalizar variantes normales de la experiencia humana.
+
+## Eficacia vs efectividad (tratamientos)
+La eficacia es el efecto de un tratamiento en condiciones controladas de investigación, con pacientes seleccionados y protocolos estrictos. La efectividad es el efecto en condiciones reales de práctica clínica, con pacientes heterogéneos y variabilidad en la implementación. Un tratamiento puede ser muy eficaz en ensayos clínicos y solo moderadamente efectivo en la práctica real, lo que plantea el problema de la brecha entre la investigación y la clínica.
+
+## Exposición (técnica)
+Procedimiento terapéutico central en el tratamiento de la ansiedad que consiste en confrontar de forma sistemática y planificada los estímulos o situaciones temidas, sin realizar conductas de evitación o escape. El mecanismo principal es el aprendizaje inhibitorio: se aprende que el estímulo temido no tiene las consecuencias catastróficas esperadas. La exposición es el componente activo de las terapias basadas en la evidencia para fobias, TOC y trastorno de estrés postraumático.
+
+## Insight (conciencia de enfermedad)
+Capacidad del paciente para reconocer que tiene un trastorno mental, que sus síntomas son manifestaciones de ese trastorno y que necesita tratamiento. Es multidimensional: se puede tener conciencia de estar enfermo sin reconocer que síntomas específicos forman parte de la enfermedad. El insight reducido es especialmente prevalente en la psicosis y se asocia con peor adherencia al tratamiento y peores resultados a largo plazo.
+
+## Modelo categorial vs dimensional
+El modelo categorial describe los trastornos mentales como categorías discretas: se tiene o no se tiene el trastorno. El dimensional los representa como posiciones en uno o varios continua que van desde la normalidad hasta la patología severa. Los datos empíricos apoyan mayoritariamente la naturaleza dimensional de la psicopatología, pero el modelo categorial sigue siendo predominante en la práctica clínica por su utilidad operativa.
+
+## Psicosis
+Estado mental caracterizado por una ruptura con la realidad compartida, que incluye alucinaciones, delirios y desorganización del pensamiento o la conducta. No es sinónimo de esquizofrenia: puede aparecer en la depresión grave, el trastorno bipolar, el consumo de sustancias o como entidad propia. La psicosis es un síndrome, no un diagnóstico en sí mismo; su aparición requiere evaluación cuidadosa del contexto clínico y biográfico.
+
+## RDoC
+Research Domain Criteria; marco de investigación propuesto por el NIMH en 2010 como alternativa al DSM. Organiza la investigación en torno a dimensiones de funcionamiento —como el procesamiento del miedo o el circuito de recompensa— analizadas en múltiples niveles: genes, células, circuitos, comportamiento y autoinforme. Su objetivo es anclar la psicopatología en la neurobiología en lugar de en categorías diagnósticas de base descriptiva.
+
+## Síntomas negativos y positivos (esquizofrenia)
+Los síntomas positivos son los que se añaden al funcionamiento habitual: alucinaciones, delirios, pensamiento desorganizado. Los negativos son los que representan una pérdida o disminución de funciones normales: embotamiento afectivo, alogia —reducción del habla—, avolición —falta de motivación— y anhedonia. Los síntomas negativos son más resistentes al tratamiento farmacológico y predicen peor funcionamiento a largo plazo.
+
+## Trastorno de personalidad
+Patrón persistente y generalizado de experiencia interna y comportamiento que se desvía marcadamente de las expectativas culturales, es inflexible, afecta múltiples áreas vitales y causa malestar o deterioro. Se distingue de los trastornos del estado de ánimo o de ansiedad en que no es episódico sino estable desde la adolescencia o el principio de la adultez. El DSM-5 reconoce diez trastornos de personalidad agrupados en tres clusters según sus rasgos compartidos.
+
+---
+
+# Psicofarmacología
+
+## Agonista / antagonista
+Un agonista es una molécula que se une a un receptor y produce el efecto que produce el neurotransmisor endógeno. Un antagonista se une al mismo receptor pero no lo activa, bloqueando el efecto del agonista o del neurotransmisor natural. Esta distinción es fundamental en psicofarmacología: los antipsicóticos son principalmente antagonistas de dopamina; algunos fármacos para la adicción a opiáceos son agonistas parciales.
+
+## Antipsicótico atípico
+Segunda generación de fármacos antipsicóticos que actúan sobre receptores de dopamina y serotonina. En comparación con los antipsicóticos clásicos, tienen menor probabilidad de producir efectos extrapiramidales como la discinesia tardía. Sin embargo, generan con mayor frecuencia efectos metabólicos como aumento de peso, dislipemia y riesgo de diabetes tipo 2.
+
+## Benzodiacepina
+Clase de fármacos que potencian la acción del GABA, el principal neurotransmisor inhibidor del sistema nervioso central, produciendo efectos ansiolíticos, sedantes, relajantes musculares y anticonvulsivantes. Son eficaces para el alivio agudo de la ansiedad y el insomnio, pero su uso prolongado genera tolerancia y dependencia física. La retirada abrupta puede producir un síndrome de discontinuación grave que en casos extremos incluye convulsiones.
+
+## ISRS
+Inhibidores Selectivos de la Recaptación de Serotonina; clase de antidepresivos que bloquean el transportador que recapta la serotonina desde la sinapsis, aumentando su disponibilidad en el espacio sináptico. Son el tratamiento farmacológico de primera línea para la depresión, la ansiedad generalizada, el TOC y el trastorno de estrés postraumático. Su mecanismo de acción real es más complejo de lo que sugiere la "hipótesis serotoninérgica" de la depresión, que ha sido ampliamente revisada.
+
+## Síndrome de discontinuación
+Conjunto de síntomas que aparecen cuando se interrumpe bruscamente un fármaco del que el organismo se ha vuelto dependiente. Con los ISRS incluye síntomas similares a los de la gripe, mareos, parestesias y alteraciones del estado de ánimo. No es lo mismo que una recaída del trastorno original: suele aparecer en los días siguientes a la retirada y mejora si se reintroduce el fármaco y se realiza una reducción gradual y progresiva.
+
+## Tolerancia y dependencia (farmacológica)
+La tolerancia es la reducción del efecto de un fármaco con el uso repetido, que obliga a aumentar la dosis para obtener el mismo efecto. La dependencia es el estado adaptativo en que el organismo necesita el fármaco para funcionar con normalidad, de modo que su retirada produce síntomas de abstinencia. Ambas son distintas de la adicción, que implica un componente de búsqueda compulsiva a pesar del daño que el consumo produce.
+
+## Vida media (fármaco)
+Tiempo que tarda el organismo en eliminar la mitad de la concentración de un fármaco en sangre. Determina la frecuencia de dosificación y el tiempo necesario para alcanzar el estado estacionario o para que el fármaco se elimine completamente tras su retirada. Los fármacos con vida media larga, como la fluoxetina con aproximadamente cinco días, producen transiciones más suaves y menor riesgo de síndrome de discontinuación que los de vida media corta.
+
+---
+
+# Psicología social y organizacional
+
+## Burnout
+Síndrome de agotamiento crónico relacionado con el trabajo, que se caracteriza por tres dimensiones: agotamiento emocional, despersonalización o cinismo hacia el trabajo y las personas atendidas, y reducción del sentido de logro personal. Fue descrito por Maslach y Jackson en los años 80 en profesionales de ayuda. La OMS lo incluyó en la CIE-11 como fenómeno ocupacional, no como trastorno mental, enfatizando su origen en el contexto de trabajo más que en características de la persona.
+
+## Disonancia cognitiva
+Malestar psicológico que surge cuando una persona mantiene dos cogniciones inconsistentes entre sí, o cuando su comportamiento contradice sus creencias. El mecanismo habitual de resolución no es cambiar el comportamiento sino modificar la creencia o añadir cogniciones que justifiquen la inconsistencia. Festinger describió este fenómeno en los años 50 a partir del estudio de una secta apocalíptica y hoy es uno de los principios más sólidos de la psicología social.
+
+## Efecto Hawthorne
+Fenómeno por el que las personas modifican su comportamiento cuando saben que están siendo observadas, independientemente de la intervención que se esté estudiando. Tiene implicaciones metodológicas importantes: en estudios organizacionales y clínicos, parte de la mejora observada puede deberse a la atención recibida y no a la intervención en sí. Su nombre proviene de los estudios realizados en la planta Hawthorne de Western Electric en los años 20 del siglo pasado.
+
+## Engagement laboral
+Estado psicológico positivo relacionado con el trabajo, caracterizado por vigor —energía y resiliencia—, dedicación —entusiasmo e implicación— y absorción —concentración y disfrute—. Es el polo opuesto del burnout, aunque no son simplemente los extremos de un mismo continuo. Se asocia con mayor rendimiento, menor rotación, mejor salud y mayor bienestar general del trabajador.
+
+## Groupthink
+Fenómeno que ocurre en grupos cohesionados cuando la presión hacia la conformidad y la unanimidad inhibe el pensamiento crítico, la evaluación realista de alternativas y la expresión de discrepancias. Janis lo identificó analizando decisiones históricas desastrosas como la invasión de Bahía de Cochinos. Los síntomas incluyen ilusión de invulnerabilidad, racionalización colectiva, estereotipia del exogrupo y autocensura de los miembros que albergan dudas.
+
+## Liderazgo transformacional
+Estilo de liderazgo en el que el líder inspira a los seguidores a trascender sus intereses personales inmediatos y a comprometerse con una visión colectiva. Se apoya en cuatro componentes: influencia idealizada, motivación inspiracional, estimulación intelectual y consideración individualizada. Contrasta con el liderazgo transaccional, que opera mediante intercambios de recompensas y castigos sin apuntar a la transformación de los valores o la identidad del grupo.
+
+## Norma social
+Regla implícita o explícita que define el comportamiento esperado o aceptable dentro de un grupo o contexto social. Las normas descriptivas dicen lo que la mayoría hace; las normas prescriptivas dicen lo que se debe hacer. Son extraordinariamente poderosas: gran parte de la conducta humana está regulada por normas de las que no se es plenamente consciente y cuya transgresión genera presiones de conformidad o sanciones sociales.
+
+## Obediencia a la autoridad
+Tendencia a seguir las instrucciones de una figura de autoridad incluso cuando esas instrucciones entran en conflicto con los valores propios. Los experimentos de Milgram en los años 60 mostraron que la mayoría de los participantes administraban lo que creían ser descargas eléctricas severas a otra persona simplemente porque un experimentador se lo ordenaba. Estos resultados cuestionaron la explicación disposicional del mal moral y apuntaron al poder situacional de la autoridad percibida.

@@ -33,3 +33,17 @@ Respondé sin mirar las respuestas.
 14. ¿Por qué el problema WEIRD es una amenaza a la validez externa de la mayoría de estudios psicológicos?
 
 15. Leés un paper que reporta p = 0.048, n = 30, sin tamaño de efecto. ¿Cómo evaluás la solidez de ese resultado?
+
+---
+
+**Preguntas — Investigación cualitativa:**
+- ¿Cuándo es más apropiado usar metodología cualitativa que cuantitativa? Dá un ejemplo de una pregunta de investigación clínica que requiera cada una.
+- ¿Qué es la saturación en investigación cualitativa y por qué es el criterio para determinar el tamaño muestral?
+- ¿Cómo se asegura el rigor en investigación cualitativa si no se usan los criterios de validez y confiabilidad de la investigación cuantitativa?
+- ¿Qué es la reflexividad del investigador en la investigación cualitativa y por qué es un criterio de calidad y no un sesgo a eliminar?
+
+**Preguntas — Estadística avanzada:**
+- En un estudio sobre depresión, se reporta β = 0.34 para neuroticismo en una regresión múltiple. ¿Qué significa ese coeficiente?
+- ¿Qué diferencia hay entre análisis factorial exploratorio y confirmatorio? ¿Cuándo se usa cada uno?
+- Un meta-análisis reporta d = 0.45 con I² = 78%. ¿Cómo interpretás esos dos valores juntos?
+- ¿Por qué el SEM es más adecuado que la regresión múltiple para probar modelos teóricos en psicología?
