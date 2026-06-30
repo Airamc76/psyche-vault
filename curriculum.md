@@ -230,3 +230,71 @@ Estos módulos se agregaron para llevar el repo a nivel universitario real. Son 
                               ↓
                          09 → 15 → 10
 ```
+
+---
+
+## Módulo 17 — Psicobiología y Biología del Comportamiento
+**Por qué estudiarlo:** La mente no puede entenderse sin su sustrato biológico más amplio.
+El SNA, el eje HPA, la genética del comportamiento y la epigenética explican cómo el cuerpo
+y el ambiente interactúan para producir diferencias individuales.
+**Tiempo estimado:** 5-6 semanas
+**Libros centrales:** *Biopsychology* — Pinel & Barnes; *Psicobiología* — Rosenzweig et al.
+
+---
+
+## Módulo 18 — Psicofarmacología Básica
+**Por qué estudiarlo:** El psicólogo clínico trabaja con pacientes medicados. No para prescribir,
+sino para entender el mecanismo de los fármacos, reconocer efectos secundarios y colaborar
+con psiquiatras.
+**Tiempo estimado:** 3-4 semanas
+**Libros centrales:** *Stahl's Essential Psychopharmacology* — Stephen Stahl
+
+---
+
+## Módulo 19 — Psicología Educacional
+**Por qué estudiarlo:** El aprendizaje no ocurre en el vacío. La ZDP de Vygotsky, la
+mentalidad de crecimiento (Dweck) y el meta-análisis de Hattie transforman cómo se entiende
+la enseñanza y el aprendizaje.
+**Tiempo estimado:** 4-5 semanas
+**Libros centrales:** *Psicología Educativa* — Woolfolk; *Visible Learning* — Hattie
+
+---
+
+## Módulo 20 — Psicología de la Salud
+**Por qué estudiarlo:** La salud es biopsicosocial. La psiconeuroinmunología, el afrontamiento
+y la adherencia terapéutica son campos donde la psicología tiene impacto clínico directo.
+**Tiempo estimado:** 4-5 semanas
+**Libros centrales:** *Health Psychology* — Sarafino & Smith; *Health Psychology* — Taylor
+
+---
+
+## Módulo 21 — Neuropsicología Clínica
+**Por qué estudiarlo:** Los síndromes neuropsicológicos (afasia, amnesia, demencia, síndromes
+frontales) iluminan la arquitectura de la cognición normal y son central en evaluación clínica.
+**Tiempo estimado:** 5-6 semanas
+**Libros centrales:** *Neuropsychological Assessment* — Lezak et al.; *Introducción a la
+Neuropsicología* — Portellano
+
+---
+
+## Módulo 22 — Psicología Organizacional
+**Por qué estudiarlo:** Las personas pasan la mayor parte de sus horas despiertas en contextos
+laborales. Motivación, liderazgo, burnout y clima organizacional son variables psicológicas
+con enorme impacto en bienestar y rendimiento.
+**Tiempo estimado:** 4-5 semanas
+**Libros centrales:** *Organizational Behavior* — Robbins & Judge; *Schein's Organizational
+Culture* — Edgar Schein
+
+---
+
+## Orden sugerido completo (todos los módulos)
+
+```
+01 → 11 (en paralelo)
+     ↓
+12 → 13 → 17 → 02 → 03 → 04
+                    ↓
+               14 → 05 → 06 → 07 → 08 → 16 → 18
+                                   ↓
+                              09 → 21 → 15 → 19 → 20 → 22 → 10
+```
