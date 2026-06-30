@@ -1,0 +1,162 @@
+site_name: psyche-vault
+site_description: Repositorio autodidacta de psicología a nivel universitario
+site_author: Airam
+site_url: https://airamc76.github.io/psyche-vault/
+
+docs_dir: .
+site_dir: _site
+
+theme:
+  name: material
+  language: es
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Modo oscuro
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Modo claro
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - toc.follow
+
+plugins:
+  - search:
+      lang: es
+
+markdown_extensions:
+  - tables
+  - toc:
+      permalink: true
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+exclude_docs: |
+  _site/
+  .git/
+  .gitignore
+  requirements.txt
+
+nav:
+  - Inicio: README.md
+  - Curriculum: curriculum.md
+  - Progreso: progreso.md
+
+  - Módulos:
+    - "00 — Orientación": modulos/00-orientacion/README.md
+    - "01 — Historia y Escuelas": modulos/01-historia-y-escuelas/README.md
+    - "02 — Psicoanálisis": modulos/02-psicoanalisis/README.md
+    - "03 — Conductismo y Cognitivismo": modulos/03-conductismo-cognitivismo/README.md
+    - "04 — Humanismo y Existencialismo": modulos/04-humanismo-existencial/README.md
+    - "05 — Neurociencias": modulos/05-neurociencias/README.md
+    - "06 — Psicología Social": modulos/06-psicologia-social/README.md
+    - "07 — Desarrollo Humano": modulos/07-desarrollo-humano/README.md
+    - "08 — Psicopatología": modulos/08-psicopatologia/README.md
+    - "09 — Evaluación y Diagnóstico": modulos/09-evaluacion-y-diagnostico/README.md
+    - "10 — Temas Propios": modulos/10-temas-propios/README.md
+    - "11 — Metodología e Investigación": modulos/11-metodologia-estadistica/README.md
+    - "12 — Procesos Psicológicos Básicos": modulos/12-procesos-basicos/README.md
+    - "13 — Psicología Cognitiva": modulos/13-psicologia-cognitiva/README.md
+    - "14 — Personalidad": modulos/14-personalidad/README.md
+    - "15 — Ética Profesional": modulos/15-etica-profesional/README.md
+    - "16 — Psicología Clínica": modulos/16-psicologia-clinica/README.md
+    - "17 — Psicobiología": modulos/17-psicobiologia/README.md
+    - "18 — Psicofarmacología": modulos/18-psicofarmacologia/README.md
+    - "19 — Psicología Educacional": modulos/19-psicologia-educacional/README.md
+    - "20 — Psicología de la Salud": modulos/20-psicologia-salud/README.md
+    - "21 — Neuropsicología Clínica": modulos/21-neuropsicologia-clinica/README.md
+    - "22 — Psicología Organizacional": modulos/22-psicologia-organizacional/README.md
+
+  - Conceptos:
+    - "01 Historia": modulos/01-historia-y-escuelas/conceptos.md
+    - "02 Psicoanálisis": modulos/02-psicoanalisis/conceptos.md
+    - "03 Conductismo": modulos/03-conductismo-cognitivismo/conceptos.md
+    - "04 Humanismo": modulos/04-humanismo-existencial/conceptos.md
+    - "05 Neurociencias": modulos/05-neurociencias/conceptos.md
+    - "06 Social": modulos/06-psicologia-social/conceptos.md
+    - "07 Desarrollo": modulos/07-desarrollo-humano/conceptos.md
+    - "08 Psicopatología": modulos/08-psicopatologia/conceptos.md
+    - "09 Evaluación": modulos/09-evaluacion-y-diagnostico/conceptos.md
+    - "11 Metodología": modulos/11-metodologia-estadistica/conceptos.md
+    - "12 Procesos": modulos/12-procesos-basicos/conceptos.md
+    - "13 Cognitiva": modulos/13-psicologia-cognitiva/conceptos.md
+    - "14 Personalidad": modulos/14-personalidad/conceptos.md
+    - "15 Ética": modulos/15-etica-profesional/conceptos.md
+    - "16 Clínica": modulos/16-psicologia-clinica/conceptos.md
+    - "17 Psicobiología": modulos/17-psicobiologia/conceptos.md
+    - "18 Psicofarmacología": modulos/18-psicofarmacologia/conceptos.md
+    - "19 Educacional": modulos/19-psicologia-educacional/conceptos.md
+    - "20 Salud": modulos/20-psicologia-salud/conceptos.md
+    - "21 Neuropsicología": modulos/21-neuropsicologia-clinica/conceptos.md
+    - "22 Organizacional": modulos/22-psicologia-organizacional/conceptos.md
+
+  - Exámenes:
+    - Instrucciones: examenes/README.md
+    - "Parcial 1 — Orígenes y Escuelas": examenes/parcial-01-bloque-A.md
+    - "Parcial 2 — Neurociencias, Social, Desarrollo": examenes/parcial-02-bloque-B.md
+    - "Parcial 3 — Metodología, Procesos, Cognición": examenes/parcial-03-bloque-C.md
+    - "Parcial 4 — Ética, Clínica, Módulos Aplicados": examenes/parcial-04-bloque-D.md
+    - "Final Integrador": examenes/final-integrador.md
+    - "Rúbrica General": examenes/rubricas/rubrica-general.md
+
+  - Casos Clínicos:
+    - Introducción: casos-clinicos/README.md
+    - "Guía de Formulación": casos-clinicos/guia-formulacion-de-casos.md
+    - "01 — Depresión Mayor": casos-clinicos/caso-01-depresion-mayor.md
+    - "02 — Trastorno de Pánico": casos-clinicos/caso-02-trastorno-panico.md
+    - "03 — Esquizofrenia": casos-clinicos/caso-03-esquizofrenia.md
+    - "04 — Trastorno Bipolar": casos-clinicos/caso-04-trastorno-bipolar.md
+    - "05 — Trastorno Límite de Personalidad": casos-clinicos/caso-05-trastorno-personalidad-limite.md
+    - "06 — TEPT": casos-clinicos/caso-06-TEPT.md
+    - "07 — TDAH Adulto": casos-clinicos/caso-07-TDAH-adulto.md
+    - "08 — TOC": casos-clinicos/caso-08-TOC.md
+    - "09 — Anorexia Nerviosa": casos-clinicos/caso-09-anorexia-nerviosa.md
+
+  - Síntesis:
+    - Introducción: sintesis/README.md
+    - "Escuelas Comparadas": sintesis/escuelas-comparadas.md
+    - "Terapias Comparadas": sintesis/terapias-comparadas.md
+    - "Línea de Tiempo 1879-2024": sintesis/linea-de-tiempo.md
+    - "5 Debates Irresueltos": sintesis/debates-centrales.md
+    - "Mapa de Módulos": sintesis/mapa-modulos.md
+
+  - Investigación:
+    - Introducción: investigacion/README.md
+    - "Cómo Leer un Paper": investigacion/como-leer-un-paper.md
+    - "Ficha de Lectura": investigacion/ficha-de-lectura.md
+    - "Guía APA 7": investigacion/guia-apa7.md
+    - "Bases de Datos": investigacion/bases-de-datos.md
+    - "Evaluar Calidad de Estudios": investigacion/evaluar-calidad-estudio.md
+
+  - Recursos:
+    - Biblioteca: recursos/biblioteca.md
+    - Glosario: recursos/glosario.md
+    - Herramientas: recursos/herramientas.md
+
+  - Anki:
+    - "Instrucciones": anki/README.md
+    - "01 Historia": anki/01-historia.md
+    - "02 Psicoanálisis": anki/02-psicoanalisis.md
+    - "05 Neurociencias": anki/05-neurociencias.md
+    - "08 Psicopatología": anki/08-psicopatologia.md
+    - "11 Metodología": anki/11-metodologia.md
+    - "12 Procesos": anki/12-procesos.md
+    - "13 Cognitiva": anki/13-cognitiva.md
+    - "14 Personalidad": anki/14-personalidad.md
+    - "16 Clínica": anki/16-psicologia-clinica.md
+    - "17 Psicobiología": anki/17-psicobiologia.md

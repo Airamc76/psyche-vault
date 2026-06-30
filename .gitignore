@@ -19,6 +19,9 @@ desktop.ini
 *.swp
 *.swo
 
+# MkDocs build output
+_site/
+
 # Temporales
 *.tmp
 *.bak
