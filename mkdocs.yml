@@ -4,7 +4,7 @@ site_author: Airam
 site_url: https://airamc76.github.io/psyche-vault/
 
 docs_dir: .
-site_dir: _site
+site_dir: ../psyche-vault-site
 
 theme:
   name: material
@@ -34,6 +34,7 @@ theme:
     - toc.follow
 
 plugins:
+  - same-dir
   - search:
       lang: es
 

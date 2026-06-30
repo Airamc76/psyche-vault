@@ -21,6 +21,7 @@ desktop.ini
 
 # MkDocs build output
 _site/
+../psyche-vault-site/
 
 # Temporales
 *.tmp
