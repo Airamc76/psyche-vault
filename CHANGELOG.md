@@ -23,6 +23,20 @@
 
 ---
 
+## 2026-06-30 (2)
+
+### [docs] — Mapa transversal de conexiones entre los 22 modulos
+
+- Creado `sintesis/mapa-modulos.md` con:
+  - Diagrama ASCII de dependencias y flujos entre todos los modulos
+  - Conexiones por concepto transversal (apego, regulacion emocional, naturaleza-crianza, evidencia empirica)
+  - Tabla de prerequisitos recomendados para modulos avanzados
+  - Tabla de pares de modulos complementarios
+  - Tabla de 20 autores canonicos con modulo central y apariciones secundarias
+- Archivos creados: `sintesis/mapa-modulos.md`
+
+---
+
 ## 2026-06-29
 
 ### [feat] — Upgrade a nivel universitario — 6 módulos académicos nuevos
