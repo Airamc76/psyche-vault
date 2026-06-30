@@ -1,11 +1,8 @@
-# Preguntas — Módulo 07
+# Preguntas — Modulo 07: Desarrollo Humano
 
-*Pendiente de desarrollo.*
-
-## Preguntas críticas
-
-1. ¿Cuáles son las diferencias entre los tipos de apego (seguro, ansioso-ambivalente, evitativo, desorganizado) y cómo se manifiestan en la Strange Situation?
-2. ¿Qué implica la teoría del apego para la psicoterapia de adultos con historial de apego inseguro?
-3. ¿Qué es la zona de desarrollo próximo de Vygotsky y en qué difiere del enfoque piagetiano del aprendizaje?
-4. ¿Cómo el modelo bioecológico de Bronfenbrenner amplía el enfoque piagetiano del desarrollo?
-5. Los experimentos de Harlow con macacos rhesus mostraron que el apego no se reduce a la satisfacción de necesidades alimentarias. ¿Qué mostraron exactamente y qué implicaciones tienen?
+5 preguntas rigurosas:
+1. Sobre las etapas de Piaget: que evidencia experimental (Baillargeon, Wynn) cuestiona los estadios como discontinuidades reales y que implica eso para la teoria
+2. Sobre el apego desorganizado (tipo D): como se origina, que predice sobre psicopatologia adulta, y como se trabaja en psicoterapia con adultos con este patron
+3. Sobre el modelo bioecologico de Bronfenbrenner: como los distintos sistemas (micro, meso, exo, macro, crono) interactuan en el desarrollo de la identidad durante la adolescencia
+4. Sobre el desarrollo moral de Kohlberg: critica de Carol Gilligan sobre el sesgo de genero en el modelo, y como Kohlberg respondio a esa critica
+5. Pregunta integradora: segun la teoria del apego, los patrones de apego adulto (medidos con la AAI) predicen los de la siguiente generacion. Que mecanismos explican esta transmision intergeneracional y como se interrumpe

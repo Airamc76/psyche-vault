@@ -1,11 +1,8 @@
-# Preguntas — Módulo 05
+# Preguntas — Modulo 05: Neurociencias
 
-*Pendiente de desarrollo.*
-
-## Preguntas críticas académicas
-
-1. ¿Qué es la hipótesis del marcador somático de Damasio y qué evidencia la respalda (caso Phineas Gage, pacientes con lesiones vmPFC)?
-2. ¿Cuál es el papel de la amígdala en el miedo condicionado según LeDoux? ¿Qué distingue el miedo consciente del aprendizaje de miedo implícito?
-3. ¿Qué es la neuroplasticidad sináptica y cómo se relaciona con el aprendizaje a nivel celular (potenciación a largo plazo)?
-4. ¿Por qué Feldman Barrett argumenta que la amígdala no es simplemente el "detector de miedo" del cerebro?
-5. ¿Qué implicaciones tiene la neuroplasticidad para la comprensión de los trastornos mentales y su tratamiento?
+5 preguntas rigurosas:
+1. Sobre la neuroplasticidad: que demuestra y que no demuestra, y por que las afirmaciones populares sobre ella suelen ser exageradas
+2. Sobre las dos vias del miedo de LeDoux (via corta amigdala y via larga cortical): implicaciones para entender la ansiedad y las intervenciones terapeuticas
+3. Sobre la hipotesis del marcador somatico de Damasio: evidencia a favor (caso Phineas Gage, pacientes con dano prefrontal) y limitaciones del modelo
+4. Sobre la crisis de replicacion en neurociencia: que tipo de estudios fMRI son mas problematicos y que reformas metodologicas se propusieron
+5. Pregunta integradora: que gana y que pierde la psicologia cuando intenta reducir todos sus conceptos a mecanismos neurales (el debate reduccionismo vs pluralismo de niveles de analisis)

@@ -1,11 +1,8 @@
-# Preguntas — Módulo 03
+# Preguntas — Modulo 03: Conductismo y Cognitivismo
 
-*Pendiente de desarrollo.*
-
-## Preguntas de análisis crítico
-
-1. ¿En qué se diferencia el conductismo metodológico de Watson del conductismo radical de Skinner? ¿Cuál de los dos rechaza más radicalmente los estados mentales?
-2. Seligman descubrió la indefensión aprendida experimentando con perros. ¿Qué implica ese hallazgo para entender la depresión clínica? ¿Qué críticas tiene el modelo?
-3. La autoeficacia de Bandura está a mitad de camino entre el conductismo y el cognitivismo. ¿Por qué? ¿Qué agrega que el condicionamiento operante puro no puede explicar?
-4. ¿Qué es la triada cognitiva de Beck y cómo se relaciona con el modelo de esquemas? ¿Qué predice sobre el mantenimiento de la depresión?
-5. Tversky y Kahneman mostraron que los heurísticos producen sesgos sistemáticos. ¿Eso significa que el razonamiento humano es irracional? ¿Cuál sería una respuesta evolucionista a esa crítica?
+5 preguntas rigurosas:
+1. Sobre la transicion del conductismo al cognitivismo: que experimentos o argumentos fueron decisivos y por que el conductismo no pudo responderlos
+2. Sobre el modelo cognitivo de Beck: diferencia entre pensamientos automaticos, supuestos intermedios y creencias nucleares, y como la TCC interviene en cada nivel
+3. Sobre autoeficacia: sus 4 fuentes, como se distingue de la autoestima, y sus aplicaciones en psicologia educacional y clinica
+4. Sobre el debate sistemas 1 y 2 de Kahneman: que criticas hace Gigerenzen al programa de heuristicos y sesgos y quien tiene razon segun la evidencia
+5. Pregunta integradora: en que sentido la "tercera ola" (ACT, DBT, mindfulness) supone una ruptura con el cognitivismo de Beck y en que sentido es una continuacion

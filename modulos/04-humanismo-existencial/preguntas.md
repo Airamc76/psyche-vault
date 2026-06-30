@@ -1,11 +1,8 @@
-# Preguntas — Módulo 04
+# Preguntas — Modulo 04: Humanismo y Existencialismo
 
-*Pendiente de desarrollo.*
-
-## Preguntas críticas
-
-1. La jerarquía de necesidades de Maslow es la teoría más conocida de la psicología pero una de las menos respaldadas empíricamente. ¿Qué evidencia existe a favor y en contra? ¿Qué versiones revisadas existen?
-2. Rogers propuso que la empatía, la aceptación incondicional y la congruencia son "condiciones necesarias y suficientes" para el cambio terapéutico. ¿Qué dice la investigación sobre esa afirmación?
-3. ¿En qué se diferencia la logoterapia de Frankl del existencialismo de Sartre o Heidegger? ¿Qué aporta el contexto del Holocausto a la teoría?
-4. La teoría de la autodeterminación de Deci y Ryan distingue motivación intrínseca, extrínseca e introyectada. ¿Cómo se relaciona esa distinción con los hallazgos sobre el efecto de sobrejustificación?
-5. ¿Qué diferencia fundamental separa al humanismo del psicoanálisis y del conductismo en su visión de la naturaleza humana? ¿Es esa diferencia empírica o filosófica?
+5 preguntas rigurosas:
+1. Sobre las condiciones necesarias y suficientes de Rogers: por que son "suficientes" segun Rogers y por que la investigacion posterior cuestiono esa afirmacion
+2. Sobre la jerarquia de necesidades de Maslow: criticas empiricas y como la teoria de la autodeterminacion de Deci y Ryan la reformula con mayor rigor metodologico
+3. Sobre la logoterapia de Frankl: en que sentido el sufrimiento puede tener sentido y como esto se distingue de romanticizar el dolor
+4. Sobre las preocupaciones existenciales de Yalom (muerte, libertad, aislamiento, sin-sentido): como cada una genera ansiedad y como la terapia existencial trabaja con ellas
+5. Pregunta integradora: el movimiento de psicologia positiva de Seligman es la continuacion empirica del humanismo o su traicion? Argumenta con evidencia
