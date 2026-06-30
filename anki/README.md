@@ -69,6 +69,11 @@ Si usas AnkiConnect con un script externo, el formato `Q:/A:` es compatible con 
 | `02-psicoanalisis.md` | Psicoanálisis | 40 |
 | `05-neurociencias.md` | Neurociencias | 40 |
 | `08-psicopatologia.md` | Psicopatología | 40 |
+| `11-metodologia.md` | Metodología e Investigación | 40 |
+| `12-procesos.md` | Procesos Psicológicos Básicos | 40 |
+| `13-cognitiva.md` | Psicología Cognitiva | 35 |
+| `14-personalidad.md` | Personalidad | 40 |
+| `16-psicologia-clinica.md` | Psicología Clínica | 41 |
 | `17-psicobiologia.md` | Psicobiología | 40 |
 
 ---
