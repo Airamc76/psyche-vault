@@ -234,3 +234,66 @@ Ordenado por módulo. La dificultad es relativa al proyecto, no académica.
 **Qué vas a sacar:** El esquema completo del proceso de evaluación psicológica, los principales instrumentos y sus fundamentos, y criterios para seleccionar técnicas según el problema y el contexto.
 
 ---
+
+## Módulo 11 — Metodología y Estadística
+
+### Metodología de la Investigación — Hernández Sampieri, Fernández & Baptista
+**Dificultad:** 2
+**Por qué leerlo:** El manual estándar en el mundo hispanohablante para diseño de investigación. Cubre todo el proceso desde el planteamiento del problema hasta el análisis e informe.
+**Qué vas a sacar:** Un marco completo para evaluar críticamente cualquier estudio psicológico.
+
+### Statistics for Psychology — Aron, Coups & Aron
+**Dificultad:** 2
+**Por qué leerlo:** El libro de estadística más accesible para psicólogos sin background matemático. Usa ejemplos de investigación psicológica real en cada capítulo.
+**Qué vas a sacar:** Las pruebas estadísticas fundamentales para leer papers: t, ANOVA, correlación, chi-cuadrado.
+
+---
+
+## Módulo 13 — Psicología Cognitiva
+
+### Cognitive Psychology — Ulric Neisser (1967)
+**Dificultad:** 3
+**Por qué leerlo:** El libro que fundó la psicología cognitiva como campo. Neisser acuñó el término. Históricamente imprescindible, técnicamente denso.
+**Qué vas a sacar:** Entender cómo el cognitivismo reformuló las preguntas sobre la mente.
+
+### Frames of Mind — Howard Gardner
+**Dificultad:** 2
+**Por qué leerlo:** La teoría de las inteligencias múltiples en la voz de su autor. Aunque controvertida empíricamente, es parte del debate sobre qué es la inteligencia.
+**Qué vas a sacar:** Los argumentos para y contra un concepto unitario de inteligencia.
+
+---
+
+## Módulo 14 — Personalidad
+
+### Personality and Assessment — Walter Mischel (1968)
+**Dificultad:** 3
+**Por qué leerlo:** El libro que cuestionó la consistencia transituacional de los rasgos de personalidad. Generó una crisis en el campo y eventualmente su resolución con el modelo Big Five.
+**Qué vas a sacar:** El debate persona vs situación y por qué importa para la evaluación psicológica.
+
+---
+
+## Módulo 15 — Ética
+
+### Ethics in Psychotherapy and Counseling — Pope & Vasquez
+**Dificultad:** 2
+**Por qué leerlo:** El manual práctico de ética para psicólogos clínicos. Cubre dilemas reales con análisis concreto.
+**Qué vas a sacar:** Un marco para razonar dilemas éticos, no solo memorizar reglas.
+
+---
+
+## Módulo 16 — Psicología Clínica
+
+### Cognitive Therapy of Depression — Beck, Rush, Shaw & Emery
+**Dificultad:** 2
+**Por qué leerlo:** El manual original de la TCC para depresión. Describe el modelo cognitivo y las técnicas en detalle clínico.
+**Qué vas a sacar:** Cómo se aplica el modelo cognitivo en la práctica terapéutica real.
+
+### The Great Psychotherapy Debate — Bruce Wampold
+**Dificultad:** 3
+**Por qué leerlo:** Wampold analiza la evidencia de eficacia de las psicoterapias y argumenta que los factores comunes (alianza terapéutica) explican más varianza que las técnicas específicas.
+**Qué vas a sacar:** Una visión crítica y empírica sobre qué hace efectiva a la psicoterapia.
+
+### Acceptance and Commitment Therapy — Hayes, Strosahl & Wilson
+**Dificultad:** 2
+**Por qué leerlo:** El manual fundacional de ACT. Presenta la teoría del marco relacional y las seis intervenciones nucleares.
+**Qué vas a sacar:** Un modelo de intervención basado en aceptación y valores como alternativa al control cognitivo.

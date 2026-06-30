@@ -179,3 +179,54 @@ el recorrido. Se define sobre la marcha.
 
 Los módulos 02-04 se pueden hacer en cualquier orden después del 01.
 Los módulos 05-09 tienen más sentido en secuencia.
+
+---
+
+## Módulos académicos obligatorios
+
+Estos módulos se agregaron para llevar el repo a nivel universitario real. Son prerrequisito para leer literatura académica de los otros módulos.
+
+### Módulo 11 — Metodología de Investigación y Estadística
+**Por qué es prerequisito:** Sin metodología no podés evaluar si un resultado psicológico es real. Sin estadística no podés leer un paper.
+**Tiempo estimado:** 6-8 semanas
+**Libros:** Hernández Sampieri, Aron & Coups
+**Cuándo hacerlo:** Idealmente en paralelo con el módulo 01, antes de entrar a los módulos específicos.
+
+### Módulo 12 — Procesos Psicológicos Básicos
+**Por qué es prerequisito:** Percepción, atención, memoria, lenguaje, motivación y emoción son los bloques de construcción de todo lo demás.
+**Tiempo estimado:** 6-8 semanas
+**Libros:** Myers & DeWall, Atkinson & Hilgard
+
+### Módulo 13 — Psicología Cognitiva
+**Por qué es prerequisito:** El cognitivismo es el paradigma dominante en investigación psicológica actual. Sin entender representaciones mentales, heurísticos y razonamiento, la mayoría de los papers de la última mitad del siglo XX son opacos.
+**Tiempo estimado:** 5-6 semanas
+**Libros:** Neisser, Kahneman
+
+### Módulo 14 — Psicología de la Personalidad
+**Por qué importa:** El Big Five y sus fundamentos son la base de la evaluación psicológica y la psicología clínica modernas.
+**Tiempo estimado:** 4-5 semanas
+**Libros:** McCrae & Costa, Mischel
+
+### Módulo 15 — Ética Profesional
+**Por qué importa:** La psicología opera sobre personas vulnerables. La ética no es opcional.
+**Tiempo estimado:** 2-3 semanas
+**Libros:** Código APA, Beauchamp & Childress
+
+### Módulo 16 — Psicología Clínica y Técnicas de Intervención
+**Por qué importa:** Entender cómo se trata lo que se estudia en el módulo 08.
+**Tiempo estimado:** 6-8 semanas
+**Libros:** Beck, Hayes, Linehan, Wampold
+
+---
+
+## Orden sugerido actualizado
+
+```
+01 → 11 (en paralelo, idealmente)
+     ↓
+12 → 13 → 02 → 03 → 04
+               ↓
+          14 → 05 → 06 → 07 → 08 → 16
+                              ↓
+                         09 → 15 → 10
+```
