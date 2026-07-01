@@ -36,6 +36,9 @@ plugins:
   - search:
       lang: es
 
+extra_javascript:
+  - static/js/tts.js
+
 markdown_extensions:
   - tables
   - toc:
