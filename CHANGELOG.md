@@ -1,5 +1,15 @@
 # CHANGELOG — psyche-vault
 
+## 2026-07-01
+
+### [feat] — Completar mazos Anki para los 12 módulos que faltaban
+
+- Creados `anki/03-conductismo-cognitivismo.md`, `04-humanismo-existencial.md`, `06-psicologia-social.md`, `07-desarrollo-humano.md`, `09-evaluacion-y-diagnostico.md`, `10-temas-propios.md`, `15-etica-profesional.md`, `18-psicofarmacologia.md`, `19-psicologia-educacional.md`, `20-psicologia-salud.md`, `21-neuropsicologia-clinica.md`, `22-psicologia-organizacional.md`
+- Cada mazo extraído directamente de `conceptos.md`/`respuestas.md` del módulo correspondiente (no contenido inventado), 36-45 tarjetas por mazo salvo el módulo 10 (25 tarjetas, es un marco metodológico, no contenido factual)
+- Cobertura de Anki pasa de 10/22 a 22/22 módulos
+- `anki/README.md`: tabla de mazos actualizada con los 12 nuevos archivos y nota de cobertura completa
+- Por qué: al revisar qué quedó sin implementar de la sesión del 2026-06-30, se detectó que el "polish" de esa fecha solo corrigió la tabla de mazos existente pero no generó los mazos faltantes para 12 de los 22 módulos
+
 ## 2026-06-30
 
 ### [feat] — Completar a nivel universitario completo (todas las fases)

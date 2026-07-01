@@ -67,14 +67,28 @@ Si usas AnkiConnect con un script externo, el formato `Q:/A:` es compatible con 
 |---|---|---|
 | `01-historia.md` | Historia de la Psicología | 40 |
 | `02-psicoanalisis.md` | Psicoanálisis | 40 |
+| `03-conductismo-cognitivismo.md` | Conductismo y Cognitivismo | 37 |
+| `04-humanismo-existencial.md` | Humanismo y Existencialismo | 36 |
 | `05-neurociencias.md` | Neurociencias | 40 |
+| `06-psicologia-social.md` | Psicología Social | 37 |
+| `07-desarrollo-humano.md` | Desarrollo Humano | 39 |
 | `08-psicopatologia.md` | Psicopatología | 40 |
+| `09-evaluacion-y-diagnostico.md` | Evaluación y Diagnóstico | 44 |
+| `10-temas-propios.md` | Temas Propios (marco metodológico) | 25 |
 | `11-metodologia.md` | Metodología e Investigación | 40 |
 | `12-procesos.md` | Procesos Psicológicos Básicos | 40 |
 | `13-cognitiva.md` | Psicología Cognitiva | 35 |
 | `14-personalidad.md` | Personalidad | 40 |
+| `15-etica-profesional.md` | Ética Profesional | 41 |
 | `16-psicologia-clinica.md` | Psicología Clínica | 41 |
 | `17-psicobiologia.md` | Psicobiología | 40 |
+| `18-psicofarmacologia.md` | Psicofarmacología | 44 |
+| `19-psicologia-educacional.md` | Psicología Educacional | 43 |
+| `20-psicologia-salud.md` | Psicología de la Salud | 42 |
+| `21-neuropsicologia-clinica.md` | Neuropsicología Clínica | 45 |
+| `22-psicologia-organizacional.md` | Psicología Organizacional | 43 |
+
+Cobertura: 22/22 módulos (todos, incluyendo el 10, que usa el marco metodológico del módulo en vez de contenido factual).
 
 ---
 
