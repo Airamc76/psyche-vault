@@ -26,7 +26,6 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
-    - navigation.expand
     - navigation.top
     - search.highlight
     - search.share
@@ -57,6 +56,7 @@ nav:
   - Inicio: README.md
   - Curriculum: curriculum.md
   - Progreso: progreso.md
+  - Changelog: CHANGELOG.md
 
   - Módulos:
     - "00 — Orientación":
@@ -245,11 +245,23 @@ nav:
     - Instrucciones: anki/README.md
     - "01 Historia": anki/01-historia.md
     - "02 Psicoanálisis": anki/02-psicoanalisis.md
+    - "03 Conductismo y Cognitivismo": anki/03-conductismo-cognitivismo.md
+    - "04 Humanismo y Existencial": anki/04-humanismo-existencial.md
     - "05 Neurociencias": anki/05-neurociencias.md
+    - "06 Psicología Social": anki/06-psicologia-social.md
+    - "07 Desarrollo Humano": anki/07-desarrollo-humano.md
     - "08 Psicopatología": anki/08-psicopatologia.md
+    - "09 Evaluación y Diagnóstico": anki/09-evaluacion-y-diagnostico.md
+    - "10 Temas Propios": anki/10-temas-propios.md
     - "11 Metodología": anki/11-metodologia.md
     - "12 Procesos": anki/12-procesos.md
     - "13 Cognitiva": anki/13-cognitiva.md
     - "14 Personalidad": anki/14-personalidad.md
+    - "15 Ética Profesional": anki/15-etica-profesional.md
     - "16 Clínica": anki/16-psicologia-clinica.md
     - "17 Psicobiología": anki/17-psicobiologia.md
+    - "18 Psicofarmacología": anki/18-psicofarmacologia.md
+    - "19 Psicología Educacional": anki/19-psicologia-educacional.md
+    - "20 Psicología de la Salud": anki/20-psicologia-salud.md
+    - "21 Neuropsicología Clínica": anki/21-neuropsicologia-clinica.md
+    - "22 Psicología Organizacional": anki/22-psicologia-organizacional.md
