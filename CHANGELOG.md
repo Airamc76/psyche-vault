@@ -1,5 +1,33 @@
 # CHANGELOG — psyche-vault
 
+## 2026-07-01 (2)
+
+### [fix] — CI/CD roto y hallazgo de cadena de suministro en dependencia de MkDocs
+
+- `requirements.txt`: `mkdocs-same-dir>=1.0` era una version imposible de satisfacer (el paquete solo llega a 0.1.5), rompía `pip install` en CI y bloqueaba el deploy a Pages
+- Fijado a `==0.1.3`: las versiones 0.1.4/0.1.5 agregan una dependencia obligatoria a `properdocs`, un paquete no relacionado que imprime un aviso atribuyendo falsamente al equipo de Material for MkDocs una recomendación que no coincide con su posición real (recomiendan "Zensical", no "properdocs")
+- `.github/workflows/deploy-docs.yml`: agrega `enablement: true` a `configure-pages@v5` (Pages nunca había sido habilitado en el repo)
+- GitHub Pages en línea por primera vez: https://airamc76.github.io/psyche-vault/
+
+### [fix] — Nav de Anki incompleto, README desactualizado, sidebar sobrecargado
+
+- `mkdocs.yml`: agrega los 12 mazos Anki nuevos al nav (estaban invisibles en el sitio y fuera del índice de búsqueda pese a estar construidos), agrega `CHANGELOG.md` al nav
+- Quita `navigation.sections` (causa real del sidebar con los 22 módulos expandidos simultáneamente — `navigation.expand` no era la causa, se corrigió en un segundo intento tras verificar visualmente)
+- `README.md`: árbol de directorios actualizado (llegaba solo al módulo 10), sección "Estado del proyecto" ya no es un dead-end a `progreso.md` vacío
+
+### [feat] — Reposicionar el repo: quitar DeepTutor como método central
+
+- `README.md`, módulo 00 (README/conceptos/lecturas), módulo 01 lecturas.md: toda mención a DeepTutor reemplazada por el flujo propio del repo (lecturas → conceptos → preguntas → respuestas → Anki → notas)
+- `recursos/herramientas.md`: elimina 5 secciones completamente duplicadas (DeepTutor, Podcasts, YouTube, Bases de datos, Otras herramientas) sin perder recursos únicos de ninguna copia
+- Corrige referencia rota a `lectura-obligatoria.md` (archivo inexistente) en conceptos.md del módulo 00
+- Specs de diseño en `docs/superpowers/specs/`
+
+### [feat] — Lectura en voz alta y chat con Groq
+
+- `static/js/tts.js`: botón de altavoz en la barra superior, lee el contenido de la página con la Web Speech API nativa del navegador (sin backend, sin API key)
+- `static/js/chat.js`: widget de chat flotante con contexto automático de la página actual, usando la API de Groq. Arquitectura 100% client-side: la API key del usuario se guarda solo en `localStorage` de su navegador, nunca en el repo. Verificado que `api.groq.com` permite `fetch()` directo sin bloqueo CORS
+- Por qué: pedido explícito de convertir el repo en una plataforma de estudio propia, no solo una guía de texto
+
 ## 2026-07-01
 
 ### [feat] — Completar mazos Anki para los 12 módulos que faltaban
