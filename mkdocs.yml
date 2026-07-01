@@ -38,6 +38,7 @@ plugins:
 
 extra_javascript:
   - static/js/tts.js
+  - static/js/chat.js
 
 markdown_extensions:
   - tables
