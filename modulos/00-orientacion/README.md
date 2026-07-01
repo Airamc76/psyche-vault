@@ -3,7 +3,7 @@
 ## Qué es este módulo
 El módulo cero no enseña psicología todavía. Prepara el terreno: por qué vale la pena
 estudiar psicología de forma autodidacta, qué esperar, cómo funciona el aprendizaje
-en esta disciplina, y cómo sacarle el jugo máximo al repo y a DeepTutor.
+en esta disciplina, y cómo sacarle el jugo máximo al repo.
 
 ## Por qué existe
 La psicología tiene un problema de entrada: todo el mundo cree que ya sabe algo
@@ -15,7 +15,8 @@ Este módulo rompe eso. Te ayuda a entrar con la mente más limpia posible.
 - Entender por qué existen tantas escuelas que no se ponen de acuerdo
 - Tener un sistema propio para absorber y retener conocimiento psicológico
 - Haber leído al menos una introducción general a la disciplina
-- Haber configurado DeepTutor para estudiar con PDFs
+- Tener un método propio de retrieval practice con `preguntas.md`, `respuestas.md`
+  y Anki, sin depender de ninguna herramienta externa
 
 ## Estructura del módulo
 - `lecturas.md` — Las primeras lecturas recomendadas

@@ -50,6 +50,7 @@ exclude_docs: |
   .git/
   .gitignore
   requirements.txt
+  docs/
 
 nav:
   - Inicio: README.md

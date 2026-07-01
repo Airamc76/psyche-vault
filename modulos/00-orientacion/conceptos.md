@@ -93,26 +93,26 @@ Las estrategias que funcionan, según la investigación en psicología del apren
 
 ---
 
-## Cómo usar DeepTutor con este repositorio
+## Cómo estudiar este repositorio con retrieval practice
 
-DeepTutor es una herramienta de estudio basada en IA que permite hacer preguntas sobre documentos cargados. El flujo recomendado para este repositorio:
+El repositorio ya está diseñado como un ciclo de recuperación activa, sin necesidad de ninguna herramienta externa:
 
-1. **Descargar el PDF** del tema que estás estudiando (libro de texto, artículo, capítulo). Están referenciados en la carpeta `recursos/` de cada módulo.
+1. **Leer la fuente primaria.** Empezá por `lecturas.md` del módulo — el libro o artículo de referencia.
 
-2. **Cargar el PDF en DeepTutor.** Esperar a que lo procese completo antes de empezar.
+2. **Consolidar con `conceptos.md`.** No es un resumen para memorizar: es la explicación de por qué importa cada idea. Leelo con el libro cerca, no en lugar del libro.
 
-3. **Generar preguntas de retrieval, no resúmenes.** El error más común es pedirle a la IA que resuma. Los resúmenes son pasivos. En cambio, pide: "Genera 10 preguntas de comprensión sobre este capítulo, de dificultad media, sin incluir las respuestas." Guarda las preguntas.
+3. **Responder `preguntas.md` sin mirar.** Cerrá el libro y el archivo de respuestas. Escribí tu respuesta en un documento aparte o en papel. Este paso es incómodo — esa incomodidad es la señal de que el ejercicio de recuperación está funcionando.
 
-4. **Responder sin mirar.** Cierra el PDF y el chat. Responde cada pregunta en un documento aparte o en papel. Este paso es incómodo — eso es la señal de que está funcionando.
+4. **Revisar `respuestas.md` honestamente.** Compará tu respuesta con la de referencia. ¿Qué está bien, qué está incompleto, qué es incorrecto? No te conformes con "algo parecido decía yo".
 
-5. **Revisar respuestas con DeepTutor.** Pasa cada respuesta tuya y pide: "Evalúa mi respuesta. ¿Qué está bien, qué está incompleto, qué es incorrecto?" No le pidas la respuesta correcta directamente hasta haber intentado la tuya.
+5. **Anotar lo que no entendiste.** En el archivo `notas/` de este módulo, registrá los conceptos donde fallaste o donde la respuesta correcta te sorprendió. Esos son los puntos de estudio de la próxima sesión.
 
-6. **Anotar lo que no entendiste.** En el archivo `notas/` de este módulo, registra los conceptos donde fallaste o donde la respuesta correcta te sorprendió. Esos son los puntos de estudio de la próxima sesión.
+6. **Repasar con Anki.** El mazo del módulo en `anki/` implementa la repetición espaciada automáticamente: 10-15 minutos por día son suficientes.
 
-7. **Volver a preguntar con variaciones.** Si fallaste en "diferencia entre condicionamiento clásico y operante", la próxima sesión pide: "Dame un caso clínico y pregúntame qué tipo de condicionamiento está en juego." La misma idea, formato distinto, contexto distinto. Así se construye comprensión real.
+7. **Volver a preguntar con variaciones, en tus propias palabras.** Si fallaste en "diferencia entre condicionamiento clásico y operante", en la próxima sesión formulátelo distinto: "pensá en un caso clínico concreto y decidí qué tipo de condicionamiento está en juego". La misma idea, formato distinto, contexto distinto. Así se construye comprensión real, no memorización de la pregunta exacta.
 
-El repositorio funciona como mapa: los archivos `conceptos.md` explican el terreno, los `notas/` son tu diario de aprendizaje, y DeepTutor es el interlocutor que te obliga a recuperar activamente en lugar de leer pasivamente.
+El repositorio funciona como mapa: los archivos `conceptos.md` explican el terreno, `preguntas.md`/`respuestas.md` son el mecanismo de recuperación activa, Anki sostiene la repetición espaciada, y los `notas/` son tu diario de aprendizaje.
 
 ---
 
-*Siguiente: `lectura-obligatoria.md` — qué leer primero y en qué orden.*
+*Siguiente: `lecturas.md` — qué leer primero y en qué orden.*

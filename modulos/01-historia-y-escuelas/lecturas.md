@@ -6,8 +6,10 @@ El libro de texto estándar para historia de la psicología. Cubre desde los ant
 filosóficos hasta las tendencias contemporáneas. Leer los capítulos 1-10 para este módulo.
 Denso pero bien organizado. Cada capítulo se centra en una figura o escuela.
 
-**Con DeepTutor:** Cargá capítulos específicos, pedí un timeline de los eventos
-principales y un quiz sobre las diferencias entre escuelas.
+**Cómo leerlo activamente:** Armá tu propio timeline de los eventos principales
+a medida que avanzás, y anotá en una tabla las diferencias entre escuelas
+(objeto de estudio, método, autores clave) — comparala después con
+`sintesis/escuelas-comparadas.md`.
 
 ---
 

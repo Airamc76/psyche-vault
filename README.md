@@ -23,17 +23,19 @@ El conocimiento se construye como código:
 6. `respuestas.md` → revisá honestamente
 7. `notas/` → volcá todo lo que quedó dando vueltas
 
-## Cómo usar con DeepTutor
+## Cómo estudiar cada módulo
 
-[DeepTutor](https://github.com/HKUDS/DeepTutor) es la herramienta de estudio principal:
+1. Leé `lecturas.md` — la fuente primaria del módulo
+2. Leé `conceptos.md` — consolidá el conocimiento con tus propias palabras
+3. Respondé `preguntas.md` sin mirar las respuestas — el esfuerzo de recuperar
+   activamente es lo que consolida el aprendizaje, no la relectura
+4. Revisá `respuestas.md` honestamente — anotá dónde fallaste
+5. Repasá el mazo Anki del módulo (`anki/`) con repetición espaciada
+6. Volcá en `notas/` lo que quedó dando vueltas, y volvé a las preguntas donde
+   fallaste unos días después, formuladas de otra forma
 
-1. Descargá el PDF del libro del módulo actual
-2. Cargalo en DeepTutor (modo RAG)
-3. Pedile que genere un quiz sobre los conceptos del `conceptos.md`
-4. Usá "Deep Research" para ampliar cualquier concepto que no quedó claro
-5. Las respuestas del quiz las anotás en `notas/`
-
-El flujo detallado está en `recursos/herramientas.md`.
+Herramientas opcionales (podcasts, bases de datos, flashcards de terceros) en
+`recursos/herramientas.md`.
 
 ## Estructura
 
@@ -45,7 +47,7 @@ psyche-vault/
 ├── CHANGELOG.md            ← historial real de cambios del repo
 ├── recursos/
 │   ├── biblioteca.md       ← todos los libros anotados
-│   ├── herramientas.md     ← DeepTutor, podcasts, canales
+│   ├── herramientas.md     ← podcasts, canales, bases de datos, Anki, Obsidian
 │   └── glosario.md         ← términos clave con definición propia
 ├── modulos/
 │   ├── 00-orientacion/

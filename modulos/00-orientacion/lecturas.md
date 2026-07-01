@@ -8,8 +8,9 @@ de texto de introducción más usado en el mundo hispanohablante. No es la lectu
 apasionante, pero da el mapa completo. Leerlo entero no es el objetivo: usalo como
 atlas, entrá por los capítulos que corresponden a cada módulo.
 
-**Cómo usarlo con DeepTutor:** Cargá el PDF, pedile un resumen de los capítulos 1-3,
-luego un quiz de 10 preguntas. Comparalas con las preguntas de este módulo.
+**Cómo leerlo activamente:** Antes de cada capítulo, escribí 3-5 preguntas que
+esperás que el capítulo responda. Al terminar, cerrá el libro y contestalas de
+memoria antes de volver a mirarlo. Comparalas con las preguntas de este módulo.
 
 ---
 

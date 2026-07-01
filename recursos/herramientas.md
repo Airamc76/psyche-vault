@@ -5,235 +5,6 @@ no solo listarlas.
 
 ---
 
-## DeepTutor
-
-[DeepTutor](https://github.com/HKUDS/DeepTutor) es un sistema de estudio basado en
-RAG (Retrieval-Augmented Generation) que permite hacer preguntas sobre PDFs con
-respuestas fundamentadas en el texto cargado.
-
-### Flujo de trabajo con psyche-vault
-
-1. **Conseguí el PDF del libro del módulo actual** (las fuentes primarias de cada
-   `lecturas.md`). Los PDF van en `modulos/XX-nombre/pdfs/` (carpeta ignorada por git).
-
-2. **Cargá el PDF en DeepTutor.** En el panel de fuentes, subí el archivo. DeepTutor
-   lo indexa y ya podés hacer preguntas.
-
-3. **Antes de leer, generá un mapa.** Prompt sugerido:
-   > "Resumí los capítulos [X-Y] en una lista de los 10 conceptos más importantes,
-   > con una oración de explicación cada uno."
-
-4. **Mientras leés, preguntá sobre lo que no queda claro.** Ejemplos:
-   > "¿Cuál es la diferencia entre el modelo topográfico y el modelo estructural en Freud?"
-   > "Dame un ejemplo concreto del condicionamiento operante de Skinner."
-   > "Explicame la teoría del apego de Bowlby como si tuviera 15 años."
-
-5. **Al terminar un capítulo, generá un quiz.** Prompt:
-   > "Generá 10 preguntas de comprensión sobre lo que acabamos de leer.
-   > Las preguntas deben requerir comprensión real, no solo memorización."
-
-6. **Respondé el quiz sin mirar el PDF.** Anotá tus respuestas en `notas/`.
-
-7. **Revisá con Deep Research.** Para los conceptos donde tu respuesta fue vaga:
-   > "Explicame en profundidad [concepto]. Usá el texto como base pero podés
-   > complementar con lo que sabés."
-
-8. **Comparalos con las preguntas de `preguntas.md`.** Si respondiste bien el quiz
-   de DeepTutor, las preguntas del módulo deberían fluir.
-
-### Prompts útiles para psicología
-
-```
-"¿En qué contexto histórico surgió esta idea? ¿Qué problema venía a resolver?"
-"¿Cuál es la evidencia empírica que respalda esta afirmación?"
-"¿Cómo se aplica este concepto en la práctica clínica?"
-"¿Cuáles son las críticas principales a esta teoría?"
-"Compará [concepto A] con [concepto B] en una tabla."
-"Dame 3 ejemplos de la vida cotidiana donde se vea este fenómeno."
-```
-
----
-
-## Podcasts
-
-### Hidden Brain (en inglés)
-Shankar Vedantam — NPR. Explora la psicología detrás de decisiones cotidianas.
-Episodios de 30-45 min, bien producidos, basados en investigación real.
-Ideal para el módulo de psicología social y cognitivismo.
-
-### Mente y Cerebro — El Español (en español)
-Basado en la revista Mente y Cerebro. Episodios sobre neurociencia, psicología
-clínica y divulgación. Nivel intermedio, muy buena calidad para hispanohablantes.
-
-### The Psychology Podcast — Scott Barry Kaufman (en inglés)
-Kaufman es psicólogo de la creatividad y la autorrealización. Entrevistas largas
-con investigadores. Útil para los módulos de humanismo y creatividad.
-
-### Psicología al Desnudo — Psi Violeta (en español)
-Divulgación psicológica en español, enfocada en psicología clínica y conceptos
-de salud mental. Accesible, rigurosa y sin sensacionalismo.
-
-### Freakonomics Radio (en inglés)
-No es psicología pura, pero aplica rigor empírico a preguntas de conducta humana.
-Complementa bien el módulo de psicología social y sesgos cognitivos.
-
----
-
-## YouTube y video
-
-### Crash Course Psychology (en inglés)
-Playlist de 40 episodios de 10-15 minutos cada uno. Cubre toda la psicología
-introductoria con animaciones. Ideal como primera vista antes de entrar a un módulo.
-
-### Kurzgesagt (en inglés, subtítulos en español disponibles)
-No es psicología pura, pero los episodios sobre neurociencia, depresión y
-motivación son de los mejores de divulgación científica en YouTube.
-
-### Canal Encuentro (en español)
-Canal cultural argentino con documentales sobre psicoanálisis, psicología y
-ciencias sociales. Gratuito en YouTube.
-
-### TED Talks — Psychology
-Buscar "TED psychology" en YouTube. Las charlas de Daniel Kahneman, Paul Bloom,
-Philip Zimbardo y Lisa Feldman Barrett son especialmente relevantes para este repo.
-
-### Psiquiatría TV (en español)
-Canal de psiquiatría clínica con explicaciones de trastornos, neurobiología y
-farmacología básica. Útil para el módulo de psicopatología.
-
----
-
-## Bases de datos y papers
-
-### PubMed
-Base de datos gratuita de artículos de ciencias de la salud y psicología.
-pubmed.ncbi.nlm.nih.gov — Buscar por término + "review" para artículos de síntesis.
-
-### Redalyc
-Red de revistas científicas latinoamericanas en acceso abierto.
-redalyc.org — excelente para psicología en español.
-
-### PsyArXiv
-Preprints de psicología con acceso gratuito antes de la revisión por pares.
-psyarxiv.com
-
----
-
-## Otras herramientas
-
-### Anki
-Flashcards con repetición espaciada. El complemento perfecto para el glosario:
-una carta por término de `glosario.md`, repasar 10 minutos por día.
-Gratuito. apps.ankiweb.net
-
-Estructura sugerida para las cartas:
-- Frente: el término
-- Dorso: la definición en tus palabras + el módulo donde aplica
-
-### Obsidian
-Si querés usar este repo como segundo cerebro, Obsidian lee Markdown nativo y
-permite crear links entre notas (`[[links]]`). Abrí la carpeta `psyche-vault`
-como vault y los módulos se conectan automáticamente.
-
-### Readwise
-Para subrayar y anotar en PDFs/ebooks y que esos subrayados lleguen a tus notas.
-Se integra con Obsidian. Útil si leerás los libros en formato digital.
-
----
-
-## DeepTutor
-
-**Qué es:** Plataforma de tutoría con IA que permite cargar PDFs y conversar con ellos,
-generar quizzes automáticos, hacer búsqueda profunda sobre el contenido y obtener
-explicaciones adaptadas al nivel del estudiante. URL: https://deeptutor.ai
-
-### Flujo de trabajo con este repo
-
-**1. Preparar el material**
-
-Antes de abrir DeepTutor, localiza el PDF que quieres trabajar dentro de este repo.
-Los PDFs están organizados por unidades en `curriculum/`. Por ejemplo:
-- `curriculum/01-psicologia-general/pdfs/introduccion-psicologia.pdf`
-
-Si el PDF está protegido o escaneado, usa Adobe Acrobat (OCR) o smallpdf.com para
-hacerlo texto-seleccionable antes de subirlo.
-
-**2. Cargar el documento**
-
-1. Inicia sesión en deeptutor.ai (cuenta gratuita: hasta 3 PDFs activos)
-2. Clic en "Upload Document" — arrastra el PDF directamente
-3. Espera el procesamiento (30–60 seg para PDFs de 200 páginas)
-4. El documento aparece en tu biblioteca con un chat asociado
-
-**3. Sesión de estudio — primer pase**
-
-Cuando abres un documento por primera vez, usa este prompt de arranque:
-
-```
-Resume los conceptos principales de este documento en 10 bullets ordenados
-por importancia. Luego dime qué 3 conceptos son los más contraintuitivos
-o difíciles de entender para un estudiante de primer año.
-```
-
-Esto te da un mapa mental del material antes de leerlo entero.
-
-**4. Generar quiz**
-
-DeepTutor tiene botón nativo de quiz. Para psicología, ajusta así:
-- Tipo: "Multiple choice" + "True/False" mezclados
-- Dificultad: Media-alta (el modo "Easy" es inútil para examen)
-- Foco: "Key concepts only" en vez de detalles de ejemplos
-
-Prompt alternativo si el quiz automático es demasiado superficial:
-
-```
-Genera 10 preguntas de examen tipo test sobre [tema específico] de este documento.
-Para cada pregunta: 4 opciones, una correcta, y después de las opciones escribe
-la justificación de por qué la respuesta correcta es correcta y por qué las otras
-tres son incorrectas.
-```
-
-**5. Deep Research — para ir más allá del PDF**
-
-La función "Deep Research" de DeepTutor busca en internet fuentes externas
-relacionadas con el documento cargado. Útil para:
-
-- Contrastar teorías del libro con investigación reciente
-- Encontrar estudios empíricos que respalden (o contradigan) lo que dice el autor
-- Buscar metaanálisis sobre temas clínicos
-
-Prompt útil para Deep Research en psicología:
-
-```
-Busca investigación publicada después de 2018 sobre [concepto del PDF].
-¿Qué han encontrado los estudios recientes? ¿Algún hallazgo contradice
-lo que afirma el autor de este documento?
-```
-
-**6. Modo socrático — para preparar examen oral**
-
-```
-Hazme preguntas sobre [tema] como si fuera un examen oral universitario.
-No me des la respuesta. Cuando yo responda, corrígeme y profundiza.
-Sé exigente: si mi respuesta es vaga o incompleta, señálalo.
-```
-
-**7. Sincronizar con el repo**
-
-Después de cada sesión en DeepTutor:
-1. Copia las preguntas del quiz generado → pégalas en el archivo
-   `curriculum/[unidad]/quizzes/[tema].md` de este repo
-2. Si encontraste algo interesante en Deep Research → anótalo en
-   `notas/[tema]-referencias.md`
-3. Actualiza `progreso.md` con la fecha y el porcentaje completado
-
-**Limitaciones a tener en cuenta:**
-- La versión gratuita no guarda el historial de chat después de 7 días
-- PDFs de más de 300 páginas a veces se procesan mal: divide en partes
-- No reemplaza leer el texto; úsalo para consolidar después de leer
-
----
-
 ## Podcasts
 
 ### 1. Entiende Tu Mente
@@ -299,6 +70,21 @@ Después de cada sesión en DeepTutor:
 - **Para qué sirve:** Contexto histórico de la psiquiatría española y fundamentos
   fenomenológicos que aparecen en historia de la psicología.
 
+### 7. Mente y Cerebro — El Español
+- **Idioma:** Español
+- **Descripción:** Basado en la revista Mente y Cerebro. Episodios sobre
+  neurociencia, psicología clínica y divulgación. Nivel intermedio, muy buena
+  calidad para hispanohablantes.
+- **Para qué sirve:** Complemento de divulgación en español para neurociencia y
+  psicología clínica.
+
+### 8. Freakonomics Radio
+- **Idioma:** Inglés
+- **Descripción:** No es psicología pura, pero aplica rigor empírico a preguntas
+  de conducta humana.
+- **Para qué sirve:** Complementa bien el módulo de psicología social y sesgos
+  cognitivos.
+
 ---
 
 ## YouTube y video
@@ -356,6 +142,12 @@ Después de cada sesión en DeepTutor:
 - **Cuándo usarlo:** Psicología clínica, psicopatología, mecanismos de defensa.
   Sus explicaciones de la teoría del apego y el trauma son especialmente claras.
 
+### 7. Canal Encuentro
+- **Idioma:** Español
+- **Enfoque:** Canal cultural argentino con documentales sobre psicoanálisis,
+  psicología y ciencias sociales. Gratuito en YouTube.
+- **Cuándo usarlo:** Contexto latinoamericano de psicoanálisis y ciencias sociales.
+
 ---
 
 ## Bases de datos y papers
@@ -388,6 +180,11 @@ Después de cada sesión en DeepTutor:
   - Activa las alertas: busca un tema → "Create alert" → recibe papers nuevos por email
   - El botón "All X versions" a veces tiene PDF libre cuando el enlace principal
     está detrás de paywall
+
+### PsyArXiv
+- **URL:** psyarxiv.com
+- **Qué es:** Preprints de psicología con acceso gratuito antes de la revisión por
+  pares. Útil para ver investigación muy reciente que todavía no salió en revista.
 
 ### Redalyc
 - **URL:** redalyc.org
@@ -422,14 +219,11 @@ Después de cada sesión en DeepTutor:
 - **Descarga:** apps.ankiweb.net (escritorio, gratuito) / AnkiMobile (iOS, de pago)
   / AnkiDroid (Android, gratuito)
 - **Cómo usarlo con este repo:**
-  1. Cada vez que estudias un tema, crea un mazo nuevo en Anki con el nombre
-     de la unidad (ej: `01 - Psicología General`)
-  2. Una tarjeta = un concepto. Frente: definición o pregunta. Reverso: explicación.
-  3. Buenas tarjetas para psicología: "¿Qué distingue el condicionamiento operante
-     del clásico?" → respuesta al dorso con ejemplo
-  4. Descarga el mazo compartido "Psychology - Noba Project" en AnkiWeb (ankiweb.net/shared/decks/)
-     — 2000+ tarjetas de psicología en inglés ya hechas
-  5. Repasa 15-20 min/día. El algoritmo gestiona qué tarjetas necesitas repasar.
+  1. Los mazos de cada módulo ya están en `anki/` — importalos directamente
+     (ver `anki/README.md` para el proceso de importación)
+  2. Descarga el mazo compartido "Psychology - Noba Project" en AnkiWeb (ankiweb.net/shared/decks/)
+     — 2000+ tarjetas de psicología en inglés ya hechas, como complemento
+  3. Repasa 15-20 min/día. El algoritmo gestiona qué tarjetas necesitas repasar.
 
 ### Obsidian — notas enlazadas
 - **Descarga:** obsidian.md (gratuito para uso personal)
@@ -442,6 +236,10 @@ Después de cada sesión en DeepTutor:
      ver qué conceptos aparecen en múltiples asignaturas
   5. Plugin recomendado: "Dataview" — permite hacer queries sobre tus notas
      (ej: mostrar todos los archivos con tag `#pendiente`)
+
+### Readwise — subrayados de PDFs/ebooks
+- **Qué es:** Para subrayar y anotar en PDFs/ebooks y que esos subrayados lleguen
+  a tus notas. Se integra con Obsidian. Útil si leerás los libros en formato digital.
 
 ### Zotero — gestor de referencias
 - **Descarga:** zotero.org (gratuito)
