@@ -19,31 +19,42 @@
       'border-radius:50%;background:#3f51b5;color:#fff;border:none;cursor:pointer;',
       'box-shadow:0 2px 8px rgba(0,0,0,.3);z-index:1000;display:flex;',
       'align-items:center;justify-content:center;}',
-      '#pv-chat-panel{position:fixed;bottom:92px;right:24px;width:360px;max-width:90vw;',
-      'height:480px;max-height:70vh;background:var(--md-default-bg-color,#fff);',
-      'color:var(--md-default-fg-color,#000);border-radius:8px;',
-      'box-shadow:0 4px 16px rgba(0,0,0,.3);z-index:1000;display:none;',
-      'flex-direction:column;overflow:hidden;font-size:.75rem;}',
+      '#pv-chat-panel{position:fixed;bottom:92px;right:24px;width:520px;max-width:92vw;',
+      'height:640px;max-height:80vh;background:var(--md-default-bg-color,#fff);',
+      'color:var(--md-default-fg-color,#000);border-radius:10px;',
+      'box-shadow:0 4px 20px rgba(0,0,0,.35);z-index:1000;display:none;',
+      'flex-direction:column;overflow:hidden;font-size:.95rem;line-height:1.5;}',
       '#pv-chat-panel.open{display:flex;}',
-      '#pv-chat-header{padding:.6rem .8rem;background:#3f51b5;color:#fff;',
-      'display:flex;justify-content:space-between;align-items:center;}',
-      '#pv-chat-messages{flex:1;overflow-y:auto;padding:.6rem;}',
-      '.pv-chat-msg{margin-bottom:.5rem;padding:.4rem .6rem;border-radius:6px;',
-      'white-space:pre-wrap;}',
-      '.pv-chat-msg.user{background:#e8eaf6;margin-left:1.5rem;}',
-      '.pv-chat-msg.assistant{background:#f5f5f5;margin-right:1.5rem;}',
-      '.pv-chat-msg.error{background:#ffebee;color:#c62828;}',
-      '#pv-chat-input-row{display:flex;border-top:1px solid #ddd;padding:.4rem;}',
-      '#pv-chat-input{flex:1;border:1px solid #ccc;border-radius:4px;padding:.3rem .5rem;',
-      'font-size:.75rem;}',
-      '#pv-chat-send{margin-left:.4rem;background:#3f51b5;color:#fff;border:none;',
-      'border-radius:4px;padding:.3rem .7rem;cursor:pointer;}',
-      '#pv-chat-settings{padding:.8rem;}',
-      '#pv-chat-settings input{width:100%;box-sizing:border-box;margin-bottom:.5rem;',
-      'padding:.3rem .5rem;border:1px solid #ccc;border-radius:4px;font-size:.75rem;}',
+      '#pv-chat-header{padding:.8rem 1rem;background:#3f51b5;color:#fff;',
+      'display:flex;justify-content:space-between;align-items:center;font-size:1rem;',
+      'font-weight:600;}',
+      '.pv-chat-body{flex:1;display:flex;flex-direction:column;min-height:0;}',
+      '#pv-chat-messages{flex:1;overflow-y:auto;padding:1rem;}',
+      '.pv-chat-msg{margin-bottom:.75rem;padding:.6rem .9rem;border-radius:8px;',
+      'max-width:85%;}',
+      '.pv-chat-msg p{margin:0 0 .5rem 0;}',
+      '.pv-chat-msg p:last-child{margin-bottom:0;}',
+      '.pv-chat-msg ul,.pv-chat-msg ol{margin:.3rem 0 .5rem 1.2rem;padding:0;}',
+      '.pv-chat-msg code{background:rgba(0,0,0,.08);padding:.1rem .3rem;border-radius:4px;',
+      'font-size:.9em;}',
+      '.pv-chat-msg pre{background:rgba(0,0,0,.06);padding:.6rem;border-radius:6px;',
+      'overflow-x:auto;margin:.4rem 0;}',
+      '.pv-chat-msg pre code{background:none;padding:0;}',
+      '.pv-chat-msg.user{background:#e8eaf6;margin-left:auto;}',
+      '.pv-chat-msg.assistant{background:#f5f5f5;margin-right:auto;}',
+      '.pv-chat-msg.error{background:#ffebee;color:#c62828;margin-right:auto;}',
+      '#pv-chat-input-row{display:flex;border-top:1px solid #ddd;padding:.6rem;}',
+      '#pv-chat-input{flex:1;border:1px solid #ccc;border-radius:6px;padding:.5rem .7rem;',
+      'font-size:.95rem;}',
+      '#pv-chat-send{margin-left:.5rem;background:#3f51b5;color:#fff;border:none;',
+      'border-radius:6px;padding:.5rem 1rem;cursor:pointer;font-size:.95rem;}',
+      '#pv-chat-settings{padding:1.2rem;}',
+      '#pv-chat-settings p{margin:.4rem 0;}',
+      '#pv-chat-settings input{width:100%;box-sizing:border-box;margin-bottom:.6rem;',
+      'padding:.5rem .7rem;border:1px solid #ccc;border-radius:6px;font-size:.95rem;}',
       '#pv-chat-settings a{color:#3f51b5;}',
       '.pv-chat-icon-btn{background:none;border:none;color:#fff;cursor:pointer;',
-      'font-size:1rem;}'
+      'font-size:1.1rem;}'
     ].join('');
     var style = document.createElement('style');
     style.textContent = css;
@@ -63,6 +74,40 @@
   function getModel() { return localStorage.getItem(STORAGE_MODEL) || DEFAULT_MODEL; }
   function setModel(m) { localStorage.setItem(STORAGE_MODEL, m || DEFAULT_MODEL); }
 
+  // --- Markdown minimo para las respuestas del modelo (sin dependencias externas) ---
+
+  function escapeHtml(s) {
+    return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  function renderMarkdown(raw) {
+    var text = escapeHtml(raw);
+
+    text = text.replace(/```([\s\S]*?)```/g, function (_, code) {
+      return '<pre><code>' + code.trim() + '</code></pre>';
+    });
+    text = text.replace(/`([^`]+)`/g, '<code>$1</code>');
+    text = text.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    text = text.replace(/\*(.+?)\*/g, '<em>$1</em>');
+
+    var lines = text.split('\n');
+    var out = [];
+    var inList = false;
+    lines.forEach(function (line) {
+      var bullet = line.match(/^\s*[-*]\s+(.*)/);
+      var numbered = line.match(/^\s*\d+\.\s+(.*)/);
+      if (bullet || numbered) {
+        if (!inList) { out.push('<ul>'); inList = true; }
+        out.push('<li>' + (bullet ? bullet[1] : numbered[1]) + '</li>');
+      } else {
+        if (inList) { out.push('</ul>'); inList = false; }
+        if (line.trim() !== '') out.push('<p>' + line + '</p>');
+      }
+    });
+    if (inList) out.push('</ul>');
+    return out.join('');
+  }
+
   function renderMessages() {
     var box = document.getElementById('pv-chat-messages');
     if (!box) return;
@@ -71,7 +116,8 @@
       if (m.role === 'system') return;
       var div = document.createElement('div');
       div.className = 'pv-chat-msg ' + m.role;
-      div.textContent = m.content;
+      if (m.role === 'assistant') div.innerHTML = renderMarkdown(m.content);
+      else div.textContent = m.content;
       box.appendChild(div);
     });
     box.scrollTop = box.scrollHeight;
@@ -96,7 +142,7 @@
       '<p>Modelo (por defecto ' + DEFAULT_MODEL + '):</p>' +
       '<input id="pv-chat-model-input" type="text" placeholder="' + DEFAULT_MODEL + '" value="' + getModel().replace(/"/g, '&quot;') + '">' +
       '<p><a href="https://console.groq.com/keys" target="_blank" rel="noopener">Conseguir una key en console.groq.com</a></p>' +
-      '<button id="pv-chat-save" class="pv-chat-icon-btn" style="background:#3f51b5;color:#fff;padding:.4rem .8rem;border-radius:4px;">Guardar</button>' +
+      '<button id="pv-chat-save" class="pv-chat-icon-btn" style="background:#3f51b5;color:#fff;padding:.5rem 1rem;border-radius:6px;">Guardar</button>' +
       '</div>';
     document.getElementById('pv-chat-save').addEventListener('click', function () {
       var k = document.getElementById('pv-chat-key-input').value.trim();
@@ -141,32 +187,33 @@
     callGroq();
   }
 
-  function callGroq() {
+  async function callGroq() {
     var key = getKey();
     if (!key) { showError('Falta configurar tu API key de Groq.'); return; }
 
-    fetch(API_URL, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': 'Bearer ' + key
-      },
-      body: JSON.stringify({ model: getModel(), messages: messages })
-    })
-      .then(function (r) { return r.json().then(function (data) { return { ok: r.ok, data: data }; }); })
-      .then(function (result) {
-        if (!result.ok) {
-          var msg = (result.data && result.data.error && result.data.error.message) || 'Error desconocido de la API de Groq.';
-          showError(msg);
-          return;
-        }
-        var reply = result.data.choices && result.data.choices[0] && result.data.choices[0].message && result.data.choices[0].message.content;
-        messages.push({ role: 'assistant', content: reply || '(sin respuesta)' });
-        renderMessages();
-      })
-      .catch(function (e) {
-        showError('Error de red: ' + e.message);
+    try {
+      var response = await fetch(API_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer ' + key
+        },
+        body: JSON.stringify({ model: getModel(), messages: messages })
       });
+      var data = await response.json();
+
+      if (!response.ok) {
+        var errMsg = (data && data.error && data.error.message) || 'Error desconocido de la API de Groq.';
+        showError(errMsg);
+        return;
+      }
+
+      var reply = data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content;
+      messages.push({ role: 'assistant', content: reply || '(sin respuesta)' });
+      renderMessages();
+    } catch (e) {
+      showError('Error de red: ' + e.message);
+    }
   }
 
   function togglePanel() {
