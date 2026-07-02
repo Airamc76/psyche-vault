@@ -1,5 +1,41 @@
 # CHANGELOG — psyche-vault
 
+## 2026-07-02
+
+### [feat] — Lectura en voz alta, chat con Groq y repasador propio
+
+- `static/js/tts.js`: lectura en voz alta con Web Speech API nativa, en 3
+  modalidades — página completa (botón de la barra), por sección (botón
+  junto a cada título) y por selección de texto (botón flotante al marcar
+  cualquier fragmento con el mouse). Sin backend, sin API key
+- `static/js/chat.js`: widget de chat flotante con contexto automático de
+  la página actual, usando la API de Groq. La key del usuario se guarda
+  solo en `localStorage` de su navegador (arquitectura 100% client-side,
+  aprobada explícitamente frente a la alternativa de proxy serverless).
+  Verificado que `api.groq.com` acepta `fetch()` directo sin bloqueo CORS
+- Mejoras posteriores del chat: panel más grande (360→520px), tipografía
+  más legible, renderizado de markdown propio (negrita/listas/código, sin
+  dependencias de terceros) para las respuestas, scroll contenido
+  (`overscroll-behavior`), diagnóstico visible de si la key quedó guardada
+  o si el navegador está bloqueando `localStorage`
+- Botones de acción rápida en el chat: "Corregir mi respuesta" (en páginas
+  de respuestas/preguntas, usa el contexto de página ya disponible en vez
+  de parsear el contenido — el formato de `respuestas.md` no es uniforme
+  entre módulos) y "Generame un quiz" (en cualquier página)
+- `repaso.md` + `static/js/repaso.js`: repasador con repetición espaciada
+  propio, sin apps externas (AnkiWeb no sirve: requiere el cliente nativo
+  para sincronizar mazos por primera vez). Lee las tarjetas directamente
+  de las páginas ya construidas en `anki/*.md` sin duplicar contenido.
+  Algoritmo simple: acertar duplica el intervalo en días, fallar lo
+  resetea a 1 día. Estado en `localStorage`
+- `static/js/dashboard.js`: resumen automático en `progreso.md` (tarjetas
+  repasadas y pendientes por módulo), leyendo el mismo storage del
+  repasador, sin tocar las secciones manuales del usuario
+- Por qué: pedido explícito de convertir el repo en una plataforma de
+  estudio interactiva propia, con foco en aprendizaje activo (retrieval
+  practice, repetición espaciada) en vez de una guía de texto pasiva
+- Specs en `docs/superpowers/specs/`
+
 ## 2026-07-01 (2)
 
 ### [fix] — CI/CD roto y hallazgo de cadena de suministro en dependencia de MkDocs
