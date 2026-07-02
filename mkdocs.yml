@@ -40,6 +40,7 @@ extra_javascript:
   - static/js/tts.js
   - static/js/chat.js
   - static/js/repaso.js
+  - static/js/dashboard.js
 
 markdown_extensions:
   - tables

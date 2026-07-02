@@ -2,6 +2,10 @@
 
 Log personal de avance. Cada entrada es honesta: qué entendí, qué me costó, qué falta.
 
+## Resumen automático
+
+<div id="pv-dashboard-root"></div>
+
 ---
 
 ## Módulo actual
