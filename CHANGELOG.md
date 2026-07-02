@@ -1,5 +1,16 @@
 # CHANGELOG — psyche-vault
 
+## 2026-07-02 (2)
+
+### [feat] — Auditoría de UX, botón de corrección ampliado, diagrama Mermaid, tarjetas colapsables, videos en los 22 módulos
+
+- Recorrido manual del sitio (exámenes, casos clínicos, síntesis, anki, mobile) para encontrar mejoras reales de interactividad
+- `static/js/chat.js`: "Corregir mi respuesta" ahora detecta también páginas de Exámenes (parciales/final) y Casos Clínicos, no solo respuestas/preguntas
+- `sintesis/mapa-modulos.md`: el diagrama de dependencias pasa de ASCII art a un flowchart Mermaid real (`pymdownx.superfences` con `custom_fences`)
+- Las 22 tarjetas Anki (`anki/*.md`) se reformatean de texto plano `Q:/A:` a bloques colapsables `??? question` — ya no hace falta el formato plano para importar a Anki real (se abandonó esa vía); `static/js/repaso.js` se actualiza para parsear `<details class="question">` en vez de `<p>`; `anki/README.md` actualizado
+- Videos de YouTube embebidos en los 22 módulos (`lecturas.md`), todos reales y en español, verificados manualmente en el navegador antes de embeber (ninguna URL inventada). Canales recurrentes: Sprouts Español, Psico Facil, APRENDAMOS PSICOLOGIA. Módulo 10 tiene el fit más débil (es un marco metodológico sin tema factual)
+- Por qué: pedido explícito de mejorar retroalimentación visual y de interactividad del sitio para el aprendizaje
+
 ## 2026-07-02
 
 ### [feat] — Lectura en voz alta, chat con Groq y repasador propio
