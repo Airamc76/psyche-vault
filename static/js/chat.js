@@ -70,10 +70,47 @@
     return { title: title, text: text };
   }
 
+  var STORAGE_SAVED_AT = 'psyche-vault-groq-key-saved-at';
+
   function getKey() { return localStorage.getItem(STORAGE_KEY) || ''; }
-  function setKey(k) { localStorage.setItem(STORAGE_KEY, k); }
+  function setKey(k) {
+    localStorage.setItem(STORAGE_KEY, k);
+    localStorage.setItem(STORAGE_SAVED_AT, new Date().toLocaleString('es-AR'));
+  }
   function getModel() { return localStorage.getItem(STORAGE_MODEL) || DEFAULT_MODEL; }
   function setModel(m) { localStorage.setItem(STORAGE_MODEL, m || DEFAULT_MODEL); }
+
+  // Diagnostico: prueba si localStorage realmente persiste una escritura.
+  // Algunos navegadores/configuraciones de privacidad bloquean el storage
+  // en silencio (setItem no tira error pero tampoco guarda nada).
+  function storageDiagnostic() {
+    var probe = '__pv_storage_probe__';
+    try {
+      localStorage.setItem(probe, '1');
+      var ok = localStorage.getItem(probe) === '1';
+      localStorage.removeItem(probe);
+      if (!ok) return 'bloqueado';
+    } catch (e) {
+      return 'bloqueado';
+    }
+    return 'ok';
+  }
+
+  function keyStatusHtml() {
+    var diag = storageDiagnostic();
+    if (diag === 'bloqueado') {
+      return '<p style="color:#c62828;">⚠ Tu navegador está bloqueando el almacenamiento local en este sitio. ' +
+        'Por eso te pide la key cada vez: nunca llega a guardarse. Revisá la configuración de cookies/datos ' +
+        'de sitios de tu navegador para este dominio (permitir, no bloquear).</p>';
+    }
+    var key = getKey();
+    var savedAt = localStorage.getItem(STORAGE_SAVED_AT);
+    if (key) {
+      return '<p style="color:#2e7d32;">✓ Hay una key guardada (termina en ...' + key.slice(-4) + ')' +
+        (savedAt ? ', guardada el ' + savedAt : '') + '.</p>';
+    }
+    return '<p>No hay ninguna key guardada en este navegador todavía.</p>';
+  }
 
   // --- Markdown minimo para las respuestas del modelo (sin dependencias externas) ---
 
@@ -139,6 +176,7 @@
     panel.querySelector('.pv-chat-body').innerHTML =
       '<div id="pv-chat-settings">' +
       '<p>Pegá tu API key de Groq. Se guarda solo en este navegador, nunca se sube a ningún lado.</p>' +
+      keyStatusHtml() +
       '<input id="pv-chat-key-input" type="password" placeholder="gsk_..." value="' + getKey().replace(/"/g, '&quot;') + '">' +
       '<p>Modelo (por defecto ' + DEFAULT_MODEL + '):</p>' +
       '<input id="pv-chat-model-input" type="text" placeholder="' + DEFAULT_MODEL + '" value="' + getModel().replace(/"/g, '&quot;') + '">' +
