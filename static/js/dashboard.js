@@ -1,10 +1,13 @@
 // Dashboard de progreso: agrega un resumen automatico arriba de progreso.md,
 // usando las estadisticas ya guardadas por el repasador (static/js/repaso.js)
-// en localStorage. No vuelve a traer los mazos: solo lee lo que ya esta guardado.
+// en localStorage. Solo trae mazos por red para completar los totales de
+// modulos que todavia no se visitaron en el repasador (se cachea despues).
 (function () {
   'use strict';
 
   var STORAGE_KEY = 'psyche-vault-srs';
+  var LAST_SESSION_KEY = 'psyche-vault-last-session';
+  var DECK_TOTALS_KEY = 'psyche-vault-deck-totals';
 
   var DECK_LABELS = {
     '01-historia': '01 — Historia',
@@ -36,6 +39,15 @@
     catch (e) { return {}; }
   }
 
+  function loadJSON(key) {
+    try { return JSON.parse(localStorage.getItem(key)) || {}; }
+    catch (e) { return {}; }
+  }
+
+  function saveDeckTotals(totals) {
+    localStorage.setItem(DECK_TOTALS_KEY, JSON.stringify(totals));
+  }
+
   function buildStats(state) {
     var today = new Date().toISOString().slice(0, 10);
     var byModule = {};
@@ -48,7 +60,58 @@
     return byModule;
   }
 
-  function render() {
+  async function fetchCardCount(slug) {
+    var base = window.location.pathname.replace(/\/progreso\/?$/, '');
+    var url = base + '/anki/' + slug + '/';
+    try {
+      var res = await fetch(url);
+      if (!res.ok) return null;
+      var html = await res.text();
+      var doc = new DOMParser().parseFromString(html, 'text/html');
+      return doc.querySelectorAll('.md-content__inner details.question').length;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function formatDate(iso) {
+    try { return new Date(iso).toLocaleString('es-AR', { dateStyle: 'medium', timeStyle: 'short' }); }
+    catch (e) { return iso; }
+  }
+
+  function renderLastSession() {
+    var last = loadJSON(LAST_SESSION_KEY);
+    if (!last.slug) return '';
+    return '<p>📍 Último repaso: <strong>' + last.label + '</strong> — ' + formatDate(last.timestamp) +
+      ' — <a href="../repaso/#' + last.slug + '">Seguir repasando →</a></p>';
+  }
+
+  async function renderCompletionTable(stats) {
+    var totals = loadJSON(DECK_TOTALS_KEY);
+    var slugs = Object.keys(DECK_LABELS);
+    var missing = slugs.filter(function (s) { return !totals[s]; });
+
+    if (missing.length > 0) {
+      var results = await Promise.all(missing.map(fetchCardCount));
+      missing.forEach(function (slug, i) {
+        if (results[i]) totals[slug] = results[i];
+      });
+      saveDeckTotals(totals);
+    }
+
+    var html = '<table><thead><tr><th>Módulo</th><th>Progreso</th><th>Estado</th></tr></thead><tbody>';
+    slugs.forEach(function (slug) {
+      var reviewed = (stats[slug] && stats[slug].reviewed) || 0;
+      var total = totals[slug] || '?';
+      var complete = totals[slug] && reviewed >= totals[slug];
+      var estado = complete ? '✅ Completo' : (reviewed > 0 ? '🟡 En curso' : '⬜ Sin empezar');
+      html += '<tr><td>' + DECK_LABELS[slug] + '</td><td>' + reviewed + ' / ' + total + '</td><td>' + estado + '</td></tr>';
+    });
+    html += '</tbody></table>';
+    return html;
+  }
+
+  async function render() {
     var root = document.getElementById('pv-dashboard-root');
     if (!root) return;
 
@@ -56,24 +119,24 @@
     var stats = buildStats(state);
     var slugs = Object.keys(stats);
 
-    if (slugs.length === 0) {
-      root.innerHTML = '<p>Todavía no repasaste ninguna tarjeta. Andá a ' +
-        '<a href="../repaso/">Repasar</a> para empezar.</p>';
-      return;
-    }
-
     var totalReviewed = 0, totalDue = 0;
     slugs.forEach(function (s) { totalReviewed += stats[s].reviewed; totalDue += stats[s].dueToday; });
 
-    var html = '<p><strong>' + totalReviewed + '</strong> tarjetas repasadas en total, ' +
+    var html = renderLastSession();
+
+    if (slugs.length === 0) {
+      html += '<p>Todavía no repasaste ninguna tarjeta. Andá a <a href="../repaso/">Repasar</a> para empezar.</p>';
+      root.innerHTML = html;
+      return;
+    }
+
+    html += '<p><strong>' + totalReviewed + '</strong> tarjetas repasadas en total, ' +
       '<strong>' + totalDue + '</strong> pendientes de repaso hoy.</p>';
-    html += '<table><thead><tr><th>Módulo</th><th>Repasadas</th><th>Pendientes hoy</th></tr></thead><tbody>';
-    slugs.sort().forEach(function (slug) {
-      var label = DECK_LABELS[slug] || slug;
-      html += '<tr><td>' + label + '</td><td>' + stats[slug].reviewed + '</td><td>' + stats[slug].dueToday + '</td></tr>';
-    });
-    html += '</tbody></table>';
+    html += '<p>Cargando estado de módulos…</p>';
     root.innerHTML = html;
+
+    var table = await renderCompletionTable(stats);
+    root.innerHTML = html.replace('<p>Cargando estado de módulos…</p>', table);
   }
 
   document.addEventListener('DOMContentLoaded', render);

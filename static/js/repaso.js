@@ -5,6 +5,8 @@
   'use strict';
 
   var STORAGE_KEY = 'psyche-vault-srs';
+  var LAST_SESSION_KEY = 'psyche-vault-last-session';
+  var DECK_TOTALS_KEY = 'psyche-vault-deck-totals';
 
   var DECKS = [
     { slug: '01-historia', label: '01 — Historia' },
@@ -48,6 +50,19 @@
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
   }
 
+  function saveLastSession(slug, label) {
+    localStorage.setItem(LAST_SESSION_KEY, JSON.stringify({
+      slug: slug, label: label, timestamp: new Date().toISOString()
+    }));
+  }
+
+  function saveDeckTotal(slug, count) {
+    var totals = {};
+    try { totals = JSON.parse(localStorage.getItem(DECK_TOTALS_KEY)) || {}; } catch (e) { totals = {}; }
+    totals[slug] = count;
+    localStorage.setItem(DECK_TOTALS_KEY, JSON.stringify(totals));
+  }
+
   function todayISO() {
     return new Date().toISOString().slice(0, 10);
   }
@@ -77,6 +92,7 @@
       var id = slug + ':' + hashCode(question);
       cards.push({ id: id, question: question, answer: answer });
     });
+    saveDeckTotal(slug, cards.length);
     return cards;
   }
 
@@ -103,6 +119,7 @@
   }
 
   function renderDeckSelector(root) {
+    if (window.location.hash) history.replaceState(null, '', window.location.pathname);
     root.innerHTML = '';
     var list = el('div', { style: 'display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.5rem;' });
     DECKS.forEach(function (d) {
@@ -115,6 +132,8 @@
 
   async function startSession(root, deck) {
     root.innerHTML = '<p>Cargando mazo…</p>';
+    window.location.hash = deck.slug;
+    saveLastSession(deck.slug, deck.label);
     var state = loadState();
     var cards;
     try {
@@ -153,10 +172,12 @@
         var yesBtn = el('button', { class: 'md-button md-button--primary', style: 'cursor:pointer;' }, 'Sí, me acordé');
         noBtn.addEventListener('click', function () {
           grade(card.id, false, state);
+          saveLastSession(deck.slug, deck.label);
           idx++; showingAnswer = false; renderCard();
         });
         yesBtn.addEventListener('click', function () {
           grade(card.id, true, state);
+          saveLastSession(deck.slug, deck.label);
           idx++; showingAnswer = false; renderCard();
         });
         okRow.appendChild(noBtn);
@@ -176,7 +197,14 @@
   function init() {
     var root = document.getElementById('pv-repaso-root');
     if (!root) return; // no estamos en la pagina de repaso
-    renderDeckSelector(root);
+
+    var wantedSlug = window.location.hash.replace('#', '');
+    var deck = DECKS.find(function (d) { return d.slug === wantedSlug; });
+    if (deck) {
+      startSession(root, deck);
+    } else {
+      renderDeckSelector(root);
+    }
   }
 
   document.addEventListener('DOMContentLoaded', init);
