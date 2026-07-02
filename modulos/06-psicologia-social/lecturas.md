@@ -9,6 +9,14 @@ estudiante debe leer antes de citarlos en ensayos o examenes.
 
 ---
 
+## Video (en español)
+
+<iframe src="https://www.youtube.com/embed/1NKH2iDPEj8" title="El experimento de Milgram: ¿lo harías tú?" style="width:100%;aspect-ratio:16/9;border:0;" allowfullscreen></iframe>
+
+Explicación del estudio clásico de obediencia a la autoridad.
+
+---
+
 ## Textos Primarios
 
 ### 1. Asch, S. E. (1951) — Experimento de conformidad (articulo original resumido)

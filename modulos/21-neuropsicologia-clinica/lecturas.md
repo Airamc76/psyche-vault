@@ -43,6 +43,14 @@ Lectura recomendada como complemento a Portellano: leer los capítulos de anatom
 
 ---
 
+## Video (en español)
+
+<iframe src="https://www.youtube.com/embed/sreGShikKYM" title="Corteza prefrontal - Funciones y teoría" style="width:100%;aspect-ratio:16/9;border:0;" allowfullscreen></iframe>
+
+Introducción a las funciones del córtex prefrontal y su relevancia clínica.
+
+---
+
 ## Papers esenciales
 
 ### Squire, L.R. (1992). Memory and the hippocampus: A synthesis from findings with rats, monkeys, and humans. *Psychological Review*, 99(2), 195-231.

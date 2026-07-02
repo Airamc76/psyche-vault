@@ -39,6 +39,14 @@ El modelo ha sido ampliamente validado y es la referencia empírica para el dise
 
 ---
 
+## Video (en español)
+
+<iframe src="https://www.youtube.com/embed/r9Riujuqi0o" title="Los 6 estilos de liderazgo de Daniel Goleman" style="width:100%;aspect-ratio:16/9;border:0;" allowfullscreen></iframe>
+
+Resumen de los estilos de liderazgo aplicados al contexto organizacional.
+
+---
+
 ## Papers fundamentales
 
 ### Maslach, C. & Jackson, S. E. (1981)

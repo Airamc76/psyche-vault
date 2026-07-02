@@ -46,6 +46,14 @@ conecta farmacos con diagnosticos DSM y decision clinica.
 
 ---
 
+## Video (en español)
+
+<iframe src="https://www.youtube.com/embed/Lr69wm3VVhI" title="Citalopram, Sertralina, Paroxetina, Fluoxetina y Fluvoxamina (Antidepresivos ISRS)" style="width:100%;aspect-ratio:16/9;border:0;" allowfullscreen></iframe>
+
+Explicación por un médico de los ISRS más usados en la práctica clínica.
+
+---
+
 ## Por clase de farmaco
 
 ### Antidepresivos

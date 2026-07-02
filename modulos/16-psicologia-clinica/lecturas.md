@@ -63,6 +63,14 @@
 
 ---
 
+## Video (en español)
+
+<iframe src="https://www.youtube.com/embed/Xvu2tbspwcc" title="¿En qué consiste la Terapia Cognitivo Conductual (TCC)?" style="width:100%;aspect-ratio:16/9;border:0;" allowfullscreen></iframe>
+
+Explicación de los fundamentos y aplicación de la TCC.
+
+---
+
 ## Artículos clave
 
 ### Wampold, B. E., & Imel, Z. E. (2015). *The Great Psychotherapy Debate* (síntesis en artículo). *World Psychiatry, 14*(3), 268-269.

@@ -34,6 +34,14 @@ Nivel universitario. Esta guia cubre las corrientes humanista y existencial de l
 
 ---
 
+## Video (en español)
+
+<iframe src="https://www.youtube.com/embed/brH6mN-Ng50" title="Psicología Humanista - Resumen" style="width:100%;aspect-ratio:16/9;border:0;" allowfullscreen></iframe>
+
+Resumen breve del movimiento humanista (Maslow, Rogers).
+
+---
+
 ## Fuentes Secundarias
 
 ### 6. May, R. — *El hombre en busca de si mismo* (1953)

@@ -33,6 +33,14 @@ Nivel universitario. Esta guia organiza los textos esenciales para comprender el
 
 ---
 
+## Video (en español)
+
+<iframe src="https://www.youtube.com/embed/6m85iFAm8cg" title="Sigmund Freud. Psicoanálisis (toda su teoría resumida fácil)" style="width:100%;aspect-ratio:16/9;border:0;" allowfullscreen></iframe>
+
+Resumen de la teoría freudiana: aparato psíquico, inconsciente, mecanismos de defensa.
+
+---
+
 ## Fuentes Secundarias y Manuales
 
 ### 6. Laplanche, J. y Pontalis, J.-B. — *Vocabulario del psicoanalisis* (1967)

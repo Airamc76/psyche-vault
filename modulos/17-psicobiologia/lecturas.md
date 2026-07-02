@@ -9,6 +9,14 @@ sistemas sensoriales y motores, sueño, hormonas y conducta, estrés y enfermeda
 ### Psicobiología — Rosenzweig, Breedlove & Watson
 La alternativa en español/traducción. Más denso que Pinel pero más completo.
 
+## Video (en español)
+
+<iframe src="https://www.youtube.com/embed/3reuWDK70Gw" title="Sistema nervioso autónomo [Simpático y Parasimpático]" style="width:100%;aspect-ratio:16/9;border:0;" allowfullscreen></iframe>
+
+Introducción al sistema nervioso autónomo y su rol en el estrés.
+
+---
+
 ## Papers fundamentales
 
 - Selye, H. (1936). "A syndrome produced by diverse nocuous agents." *Nature*, 138, 32.

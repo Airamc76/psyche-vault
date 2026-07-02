@@ -26,6 +26,14 @@ Si no puedes escribir eso con facilidad, el tema no está maduro todavía.
 
 ---
 
+## Video (en español)
+
+<iframe src="https://www.youtube.com/embed/1gMWGL-US4I" title="Cómo elegir el mejor tema para mi investigación" style="width:100%;aspect-ratio:16/9;border:0;" allowfullscreen></iframe>
+
+Video genérico sobre selección de tema de investigación (no específico de psicología; cobertura parcial del marco del módulo).
+
+---
+
 ## 2. Como hacer una búsqueda bibliográfica sistemática
 
 Una búsqueda sistemática no es buscar en Google hasta que encuentras algo que te gusta. Es un proceso con pasos definidos que garantizan que no te estás perdiendo la literatura central.

@@ -9,6 +9,14 @@ aprendizaje, memoria, cognición, lenguaje, motivación y emoción.
 ### Introducción a la Psicología — Atkinson, Hilgard et al.
 Alternativa más académica a Myers. Capítulos 4-11 cubren los procesos básicos.
 
+## Video (en español)
+
+<iframe src="https://www.youtube.com/embed/uFuIT5B3j1E" title="¿Qué es la memoria? / Procesos psicológicos" style="width:100%;aspect-ratio:16/9;border:0;" allowfullscreen></iframe>
+
+Introducción a los tipos y funcionamiento de la memoria.
+
+---
+
 ## Lectura secundaria
 ### Cognitive Psychology — Eysenck & Keane
 Manual académico de psicología cognitiva. Más técnico que Myers pero imprescindible

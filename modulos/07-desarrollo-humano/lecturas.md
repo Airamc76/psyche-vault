@@ -10,6 +10,14 @@ han transformado la comprension del desarrollo a lo largo del ciclo vital.
 
 ---
 
+## Video (en español)
+
+<iframe src="https://www.youtube.com/embed/olnzuMtZdA8" title="La Teoría del Apego: Cómo la Infancia Afecta la Vida" style="width:100%;aspect-ratio:16/9;border:0;" allowfullscreen></iframe>
+
+Introducción a la teoría del apego de Bowlby y sus patrones.
+
+---
+
 ## Textos Primarios
 
 ### 1. Piaget, J. — *El nacimiento de la inteligencia en el nino* (1936), seleccion

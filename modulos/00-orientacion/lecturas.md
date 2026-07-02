@@ -14,6 +14,14 @@ memoria antes de volver a mirarlo. Comparalas con las preguntas de este módulo.
 
 ---
 
+## Video (en español)
+
+<iframe src="https://www.youtube.com/embed/fp_YbxuJJkQ" title="Cómo aplicar la Repetición Espaciada? La mejor forma de estudiar, según la ciencia" style="width:100%;aspect-ratio:16/9;border:0;" allowfullscreen></iframe>
+
+Resumen de la ciencia detrás del método de estudio que este repositorio implementa.
+
+---
+
 ## Lecturas secundarias (una o dos, la que más te enganche)
 
 ### Psicología — Peter Gray

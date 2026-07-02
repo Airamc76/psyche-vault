@@ -36,6 +36,14 @@ Nivel universitario. Esta guia cubre el arco desde el conductismo clasico hasta 
 
 ---
 
+## Video (en español)
+
+<iframe src="https://www.youtube.com/embed/ymKjTdPx1j0" title="Condicionamiento Operante de Skinner: Recompensas y Castigos" style="width:100%;aspect-ratio:16/9;border:0;" allowfullscreen></iframe>
+
+Animación breve sobre refuerzo y castigo en el condicionamiento operante.
+
+---
+
 ## Fuentes Secundarias y Manuales
 
 ### 6. Baars, B.J. — *In the Theater of Consciousness* (1997), Capitulos iniciales

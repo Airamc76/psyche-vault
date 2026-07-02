@@ -6,6 +6,14 @@ Las lecturas están organizadas en dos bloques: fuentes primarias (libros y cap�
 
 ---
 
+## Video (en español)
+
+<iframe src="https://www.youtube.com/embed/fHdQWmbhfdE" title="La Teoría del Desarrollo Cognitivo a Través de las Relaciones Sociales de Vygotsky" style="width:100%;aspect-ratio:16/9;border:0;" allowfullscreen></iframe>
+
+Introducción a la teoría sociocultural de Vygotsky y la zona de desarrollo próximo.
+
+---
+
 ## Bloque 1 — Manuales y libros fundamentales
 
 ### [1] Woolfolk, A. E. (2016). *Psicología Educativa* (13.ª ed.). Pearson.

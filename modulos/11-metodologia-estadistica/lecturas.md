@@ -11,6 +11,14 @@ este módulo. Pesado pero completo.
 El libro de estadística más accesible para psicólogos sin background matemático. Usa
 ejemplos de investigación psicológica real. Capítulos 1-10 cubren todo lo necesario.
 
+## Video (en español)
+
+<iframe src="https://www.youtube.com/embed/xBMQqEP1VG0" title="El método experimental explicado: pasos, características, ejemplos" style="width:100%;aspect-ratio:16/9;border:0;" allowfullscreen></iframe>
+
+Introducción al método experimental en investigación.
+
+---
+
 ## Lectura secundaria
 
 ### Research Methods in Psychology — Elmes, Kantowitz & Roediger

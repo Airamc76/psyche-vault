@@ -46,6 +46,14 @@ Capítulos especialmente relevantes: 5 (consentimiento informado), 6 (confidenci
 
 ---
 
+## Video (en español)
+
+<iframe src="https://www.youtube.com/embed/7f4UZ4c8bbc" title="¿Cuál es el Código Ético de la Psicología?" style="width:100%;aspect-ratio:16/9;border:0;" allowfullscreen></iframe>
+
+Resumen de los principios éticos fundamentales de la profesión.
+
+---
+
 ## Fuentes secundarias y complementarias
 
 ### 5. Milgram, S. (1963). *Behavioral Study of Obedience*

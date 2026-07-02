@@ -19,6 +19,14 @@ Artículo donde Mischel y Shoda responden a sus propios críticos proponiendo el
 
 ---
 
+## Video (en español)
+
+<iframe src="https://www.youtube.com/embed/RfdFjj8J5LU" title="Los Cinco Grandes rasgos de personalidad" style="width:100%;aspect-ratio:16/9;border:0;" allowfullscreen></iframe>
+
+Explicación del modelo Big Five de personalidad.
+
+---
+
 ## Papers clave
 
 ### McCrae, R. R., & Costa, P. T. (1987). Validation of the five-factor model of personality across instruments and observers. *Journal of Personality and Social Psychology, 52*(1), 81–90.

@@ -11,6 +11,14 @@ acceder a la investigacion empirica especializada.
 
 ---
 
+## Video (en español)
+
+<iframe src="https://www.youtube.com/embed/gOpz9Xn0lZs" title="Modelo Biopsicosocial: ¿Por qué dos pacientes &quot;iguales&quot; evolucionan de manera diferente?" style="width:100%;aspect-ratio:16/9;border:0;" allowfullscreen></iframe>
+
+Explicación del modelo biopsicosocial de Engel aplicado a casos reales.
+
+---
+
 ## Textos Primarios
 
 ### 1. Engel, G. L. (1977) — El modelo biopsicosocial (articulo original)

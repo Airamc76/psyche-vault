@@ -11,6 +11,14 @@ clinica incremental.
 
 ---
 
+## Video (en español)
+
+<iframe src="https://www.youtube.com/embed/nCvecEYyu8I" title="¿Cuáles son los pasos de la Evaluación Psicológica?" style="width:100%;aspect-ratio:16/9;border:0;" allowfullscreen></iframe>
+
+Resumen de las fases del proceso de evaluación psicológica.
+
+---
+
 ## Textos Primarios
 
 ### 1. Anastasi, A. y Urbina, S. — *Tests psicologicos* (1998), caps. 1–3 y 6

@@ -26,6 +26,14 @@ Introduce el concepto de *bounded rationality* (racionalidad limitada) y *satisf
 
 ---
 
+## Video (en español)
+
+<iframe src="https://www.youtube.com/embed/uvYep7c0Wa8" title="¿Qué es y qué estudia la Psicología Cognitiva?" style="width:100%;aspect-ratio:16/9;border:0;" allowfullscreen></iframe>
+
+Resumen de los procesos que estudia la psicología cognitiva.
+
+---
+
 ## Artículos seminales
 
 ### Tversky, A. & Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. *Science, 185*(4157), 1124–1131.

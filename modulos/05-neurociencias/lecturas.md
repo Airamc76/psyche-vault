@@ -28,6 +28,14 @@ Nivel universitario. Esta guia cubre la interseccion entre neurociencia y psicol
 
 ---
 
+## Video (en español)
+
+<iframe src="https://www.youtube.com/embed/UOusAbYrRL8" title="¿Cómo funciona el cerebro? (Animación)" style="width:100%;aspect-ratio:16/9;border:0;" allowfullscreen></iframe>
+
+Animación sobre estructura y funcionamiento general del cerebro humano.
+
+---
+
 ## Fuentes Secundarias y Manuales
 
 ### 5. Bear, M., Connors, B. y Paradiso, M. — *Neurociencia: explorando el cerebro* (4a ed., 2016), seleccion
