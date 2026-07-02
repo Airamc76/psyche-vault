@@ -196,7 +196,10 @@
   }
 
   function isRespuestasPage() {
-    return /\/(respuestas|preguntas)\/?$/.test(window.location.pathname);
+    var p = window.location.pathname;
+    return /\/(respuestas|preguntas)\/?$/.test(p) ||
+      /\/examenes\/(parcial|final)/.test(p) ||
+      /\/casos-clinicos\/caso-/.test(p);
   }
 
   function renderChat() {
