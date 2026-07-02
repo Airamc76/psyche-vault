@@ -65,14 +65,15 @@
     if (!res.ok) throw new Error('No pude cargar el mazo ' + slug);
     var html = await res.text();
     var doc = new DOMParser().parseFromString(html, 'text/html');
-    var paragraphs = doc.querySelectorAll('.md-content__inner p');
+    var blocks = doc.querySelectorAll('.md-content__inner details.question');
     var cards = [];
-    paragraphs.forEach(function (p) {
-      var text = p.textContent || '';
-      var m = text.match(/^Q:\s*([\s\S]*?)\n\s*A:\s*([\s\S]*)$/);
-      if (!m) return;
-      var question = m[1].trim();
-      var answer = m[2].trim();
+    blocks.forEach(function (block) {
+      var summary = block.querySelector('summary');
+      if (!summary) return;
+      var question = summary.textContent.trim();
+      var clone = block.cloneNode(true);
+      clone.querySelector('summary').remove();
+      var answer = clone.textContent.trim();
       var id = slug + ':' + hashCode(question);
       cards.push({ id: id, question: question, answer: answer });
     });

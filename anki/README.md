@@ -2,62 +2,33 @@
 
 ## Formato de las tarjetas
 
-Cada tarjeta sigue este patrón:
+Cada tarjeta es un bloque colapsable (`pymdownx.details`, tipo `question`):
 
 ```
-Q: Pregunta concreta, una sola idea
-A: Respuesta directa, 1-3 oraciones máximo
+??? question "Pregunta concreta, una sola idea"
+    Respuesta directa, 1-3 oraciones máximo.
 ```
 
-Una tarjeta por bloque. Los bloques se separan por línea en blanco.
+En el sitio se ve como una tarjeta clickeable: la pregunta está siempre visible,
+la respuesta se revela al hacer clic — igual que estudiar con flashcards reales,
+pero sin salir del navegador.
+
+Una tarjeta por bloque, separadas por línea en blanco.
 
 ---
 
-## Cómo importar a Anki
+## Cómo repasarlas
 
-### Opción A: Importar con el plugin "Markdown Importer"
+Estos mazos ya no están pensados para importarse a la app de Anki: el
+repositorio tiene su propio repasador con repetición espaciada en
+[**Repasar**](../repaso.md), que lee las tarjetas directamente de estos
+archivos. Solo hace falta abrir esa página y elegir el módulo — no requiere
+instalar nada.
 
-1. Instala el plugin **MarkdownImporter** (Anki → Herramientas → Complementos → Obtener complementos → código: buscar en AnkiWeb).
-2. En Anki, ve a Archivo → Importar Markdown.
-3. Selecciona el archivo `.md` de este directorio.
-4. El plugin detecta el patrón `Q:` / `A:` automáticamente.
-
-### Opción B: Convertir a CSV y luego importar (sin plugins)
-
-Usa este script de PowerShell para convertir cualquier mazo a CSV:
-
-```powershell
-$input_file = "01-historia.md"
-$output_file = "01-historia.csv"
-
-$lines = Get-Content $input_file
-$cards = @()
-$q = ""; $a = ""
-
-foreach ($line in $lines) {
-    if ($line -match "^Q: (.+)") { $q = $matches[1] }
-    elseif ($line -match "^A: (.+)") {
-        $a = $matches[1]
-        if ($q -and $a) { $cards += '"' + $q + '","' + $a + '"' }
-        $q = ""; $a = ""
-    }
-}
-
-$cards | Out-File -Encoding UTF8 $output_file
-Write-Host "Exportadas $($cards.Count) tarjetas a $output_file"
-```
-
-Luego en Anki:
-1. Archivo → Importar
-2. Selecciona el CSV generado
-3. Tipo de nota: Básico (Anverso / Reverso)
-4. Campo 1 → Anverso, Campo 2 → Reverso
-5. Separador: Coma
-6. Importar
-
-### Opción C: Importar directo (CrowdAnki / AnkiConnect)
-
-Si usas AnkiConnect con un script externo, el formato `Q:/A:` es compatible con la mayoría de herramientas de terceros (genanki, AnkiEditor, etc.).
+Si igual preferís usar Anki (la app real), podés copiar el texto de pregunta
+y respuesta de cada tarjeta manualmente, ya que el formato de bloque colapsable
+no es compatible con los importadores automáticos de Anki (a diferencia del
+patrón `Q:`/`A:` plano que usaban estos archivos antes).
 
 ---
 
