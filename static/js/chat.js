@@ -54,7 +54,8 @@
       '#pv-chat-settings input{width:100%;box-sizing:border-box;margin-bottom:.6rem;',
       'padding:.5rem .7rem;border:1px solid #ccc;border-radius:6px;font-size:.95rem;}',
       '#pv-chat-settings a{color:#3f51b5;}',
-      '.pv-chat-quick-btn{margin:0 .6rem .6rem;background:#e8eaf6;color:#3f51b5;border:none;',
+      '#pv-chat-quick-actions{padding:0 .6rem .6rem;display:flex;gap:.5rem;flex-wrap:wrap;}',
+      '.pv-chat-quick-btn{background:#e8eaf6;color:#3f51b5;border:none;',
       'border-radius:6px;padding:.4rem .7rem;cursor:pointer;font-size:.85rem;}',
       '.pv-chat-icon-btn{background:none;border:none;color:#fff;cursor:pointer;',
       'font-size:1.1rem;}'
@@ -200,12 +201,13 @@
 
   function renderChat() {
     var panel = document.getElementById('pv-chat-panel');
-    var quickAction = isRespuestasPage()
-      ? '<button id="pv-chat-correct-btn" class="pv-chat-quick-btn">✏️ Corregir mi respuesta</button>'
-      : '';
+    var quickActions = '<div id="pv-chat-quick-actions">' +
+      (isRespuestasPage() ? '<button id="pv-chat-correct-btn" class="pv-chat-quick-btn">✏️ Corregir mi respuesta</button>' : '') +
+      '<button id="pv-chat-quiz-btn" class="pv-chat-quick-btn">📝 Generame un quiz</button>' +
+      '</div>';
     panel.querySelector('.pv-chat-body').innerHTML =
       '<div id="pv-chat-messages"></div>' +
-      quickAction +
+      quickActions +
       '<div id="pv-chat-input-row">' +
       '<input id="pv-chat-input" type="text" placeholder="Preguntá algo sobre esta página...">' +
       '<button id="pv-chat-send">Enviar</button>' +
@@ -222,6 +224,17 @@
         input.setSelectionRange(0, 0);
       });
     }
+
+    document.getElementById('pv-chat-quiz-btn').addEventListener('click', function () {
+      messages.push({
+        role: 'user',
+        content: 'Generame 5 preguntas de comprensión sobre el contenido de esta página, ' +
+          'de dificultad media, sin incluir las respuestas todavía. Después de que te las ' +
+          'responda, corregime.'
+      });
+      renderMessages();
+      callGroq();
+    });
 
     var ctx = getPageContext();
     messages = [{
