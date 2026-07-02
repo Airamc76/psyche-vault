@@ -39,6 +39,7 @@ plugins:
 extra_javascript:
   - static/js/tts.js
   - static/js/chat.js
+  - static/js/repaso.js
 
 markdown_extensions:
   - tables
@@ -61,6 +62,7 @@ nav:
   - Curriculum: curriculum.md
   - Progreso: progreso.md
   - Changelog: CHANGELOG.md
+  - Repasar: repaso.md
 
   - Módulos:
     - "00 — Orientación":
