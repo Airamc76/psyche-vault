@@ -7,66 +7,35 @@
 
 ## 1. Diagrama de dependencias y flujos
 
-```
-FUNDAMENTOS EPISTEMOLOGICOS
-============================
-
-[00 Orientacion] ──────────────────────────────────────────────┐
-      │                                                         │
-      ▼                                                         │
-[01 Historia y Escuelas] ←──────────────── BASE HISTORICA      │
-      │         │                                               │
-      │         └──────── [11 Metodologia] ←──────────────────┘
-      │                         │
-      │              (hilo critico transversal)
-      │                         │
-      ▼                         ▼
-[12 Procesos Basicos] ──── [13 Psicologia Cognitiva]
-      │                         │
-      ▼                         ▼
-      └─────────── [17 Psicobiologia] ────────────────────────┐
-                        │                                      │
-      ┌─────────────────┴──────────────────┐                  │
-      ▼                 ▼                  ▼                   │
-[02 Psicoanalisis]  [03 Conductismo/   [04 Humanismo/         │
-      │              Cognitivismo]      Existencialismo]        │
-      │                  │                  │                   │
-      └──────────────────┼──────────────────┘                  │
-                         │                                      │
-                         ▼                                      │
-                    [14 Personalidad] ◄──────────────────────┐ │
-                         │                                   │ │
-                         ▼                                   │ │
-                    [05 Neurociencias] ◄────────────────── ──┘ │
-                         │                                      │
-              ┌──────────┴──────────┐                          │
-              ▼                     ▼                           │
-         [06 Social]          [21 Neuropsicologia]             │
-              │                     │                           │
-              ▼                     ▼                           │
-         [07 Desarrollo]       [18 Psicofarmacologia] ◄────────┘
-              │
-    ┌─────────┴─────────┐
-    ▼                   ▼
-[08 Psicopatologia]  [19 Psicologia
-    │                 Educacional]
-    │
-    ├──────────────► [16 Clinica e Intervencion]
-    │                        │
-    ▼                        ▼
-[09 Evaluacion]         [18 Psicofarmacologia]
-    │
-    ├──────────────► [21 Neuropsicologia Clinica]
-    │
-    ▼
-[15 Etica]
-    │
-    └──────────────► [20 Psicologia Salud]
-                          │
-                          └──────────► [22 Organizacional]
-                                              │
-                                              ▼
-                                         [10 Temas Propios]
+```mermaid
+graph TD
+    M00["00 Orientación"] --> M01["01 Historia y Escuelas"]
+    M01 --> M11["11 Metodología"]
+    M01 --> M12["12 Procesos Básicos"]
+    M11 --> M13["13 Psicología Cognitiva"]
+    M12 --> M17["17 Psicobiología"]
+    M13 --> M17
+    M17 --> M02["02 Psicoanálisis"]
+    M17 --> M03["03 Conductismo/Cognitivismo"]
+    M17 --> M04["04 Humanismo/Existencialismo"]
+    M02 --> M14["14 Personalidad"]
+    M03 --> M14
+    M04 --> M14
+    M14 --> M05["05 Neurociencias"]
+    M05 --> M06["06 Psicología Social"]
+    M05 --> M21["21 Neuropsicología Clínica"]
+    M06 --> M07["07 Desarrollo Humano"]
+    M21 --> M18["18 Psicofarmacología"]
+    M07 --> M08["08 Psicopatología"]
+    M07 --> M19["19 Psicología Educacional"]
+    M08 --> M16["16 Clínica e Intervención"]
+    M16 --> M18
+    M08 --> M09["09 Evaluación"]
+    M09 --> M21
+    M09 --> M15["15 Ética"]
+    M15 --> M20["20 Psicología Salud"]
+    M20 --> M22["22 Organizacional"]
+    M22 --> M10["10 Temas Propios"]
 ```
 
 ### Lectura del diagrama
