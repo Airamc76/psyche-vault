@@ -13,6 +13,14 @@ a medida que avanzás, y anotá en una tabla las diferencias entre escuelas
 
 ---
 
+## Video (en español)
+
+<iframe src="https://www.youtube.com/embed/CbSoaURC7gM" title="Historia de la psicología (Resumido)" style="width:100%;aspect-ratio:16/9;border:0;" allowfullscreen></iframe>
+
+Resumen visual de 10 minutos como primer contacto antes de leer el capítulo 1.
+
+---
+
 ## Lectura secundaria
 ### The Story of Psychology — Morton Hunt
 Más narrativo que Schultz. Excelente para entender el contexto social e intelectual

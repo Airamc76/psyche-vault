@@ -11,6 +11,15 @@ epistemologico de primer orden.
 
 ---
 
+## Video (en español)
+
+<iframe src="https://www.youtube.com/embed/3txTKVl7bYc" title="Resumen de los trastornos de ansiedad según DSM-5" style="width:100%;aspect-ratio:16/9;border:0;" allowfullscreen></iframe>
+
+Resumen de los trastornos de ansiedad según el DSM-5 (criterios diagnósticos y tratamiento).
+Cubre una parte del módulo, no el temario completo.
+
+---
+
 ## Textos Primarios
 
 ### 1. DSM-5 — Introduccion y criterios de trastornos principales
