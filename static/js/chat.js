@@ -54,6 +54,8 @@
       '#pv-chat-settings input{width:100%;box-sizing:border-box;margin-bottom:.6rem;',
       'padding:.5rem .7rem;border:1px solid #ccc;border-radius:6px;font-size:.95rem;}',
       '#pv-chat-settings a{color:#3f51b5;}',
+      '.pv-chat-quick-btn{margin:0 .6rem .6rem;background:#e8eaf6;color:#3f51b5;border:none;',
+      'border-radius:6px;padding:.4rem .7rem;cursor:pointer;font-size:.85rem;}',
       '.pv-chat-icon-btn{background:none;border:none;color:#fff;cursor:pointer;',
       'font-size:1.1rem;}'
     ].join('');
@@ -192,14 +194,34 @@
     });
   }
 
+  function isRespuestasPage() {
+    return /\/(respuestas|preguntas)\/?$/.test(window.location.pathname);
+  }
+
   function renderChat() {
     var panel = document.getElementById('pv-chat-panel');
+    var quickAction = isRespuestasPage()
+      ? '<button id="pv-chat-correct-btn" class="pv-chat-quick-btn">✏️ Corregir mi respuesta</button>'
+      : '';
     panel.querySelector('.pv-chat-body').innerHTML =
       '<div id="pv-chat-messages"></div>' +
+      quickAction +
       '<div id="pv-chat-input-row">' +
       '<input id="pv-chat-input" type="text" placeholder="Preguntá algo sobre esta página...">' +
       '<button id="pv-chat-send">Enviar</button>' +
       '</div>';
+
+    var correctBtn = document.getElementById('pv-chat-correct-btn');
+    if (correctBtn) {
+      correctBtn.addEventListener('click', function () {
+        var input = document.getElementById('pv-chat-input');
+        input.value = 'Mi respuesta a la pregunta [número o cuál] fue: ' +
+          '[pegá tu respuesta acá]. Corregila comparándola con la respuesta de ' +
+          'referencia de esta página: ¿qué está bien, qué falta, qué es incorrecto?';
+        input.focus();
+        input.setSelectionRange(0, 0);
+      });
+    }
 
     var ctx = getPageContext();
     messages = [{
